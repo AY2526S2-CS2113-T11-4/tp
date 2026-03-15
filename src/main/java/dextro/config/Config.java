@@ -9,8 +9,9 @@ public final class Config {
     public static final String CMD_DELETE = "delete";
     public static final String CMD_STATUS = "status";
     public static final String CMD_SEARCH = "search";
+    public static final String CMD_EXIT = "exit";
 
-    public static final String CMD_MODULE = "module";
-    public static final String CMD_MODULE_ADD = "add";
-    public static final String CMD_MODULE_REMOVE = "remove";
+    //Module commands
+    public static final String CMD_ADD = "add";
+    public static final String CMD_REMOVE = "remove";
 }

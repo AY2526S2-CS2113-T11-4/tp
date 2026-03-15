@@ -4,8 +4,8 @@ import dextro.command.Command;
 import dextro.command.CommandResult;
 import dextro.model.record.StudentDatabase;
 
-public class ModuleRemoveCommand implements Command {
-    public ModuleRemoveCommand(int index, String moduleCode) {
+public class RemoveCommand implements Command {
+    public RemoveCommand(int index, String moduleCode) {
     }
 
     @Override

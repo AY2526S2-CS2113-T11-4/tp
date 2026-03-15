@@ -1,9 +1,9 @@
 package dextro.parser;
 
-import dextro.config.Config;
 import dextro.command.*;
-import dextro.command.module.ModuleAddCommand;
-import dextro.command.module.ModuleRemoveCommand;
+import dextro.command.module.AddCommand;
+import dextro.command.module.RemoveCommand;
+import dextro.config.Config;
 import dextro.exception.ParseException;
 
 public class Parser {
@@ -18,16 +18,18 @@ public class Parser {
         String arguments = split.length > 1 ? split[1].trim() : "";
 
         switch (commandWord) {
-            case "create":
+            case Config.CMD_CREATE:
                 return parseCreate(arguments);
-            case "delete":
+            case Config.CMD_DELETE:
                 return parseDelete(arguments);
-            case "add":
+            case Config.CMD_ADD:
                 return parseAdd(arguments);
-            case "remove":
+            case Config.CMD_REMOVE:
                 return parseRemove(arguments);
-            case "list":
+            case Config.CMD_LIST:
                 return new ListCommand();
+            case Config.CMD_EXIT:
+                return new ExitCommand();
             default:
                 throw new ParseException("Unknown command: " + commandWord);
         }
@@ -68,7 +70,7 @@ public class Parser {
             throw new ParseException("Invalid student index: " + tokens[0]);
         }
         String moduleGrade = tokens[1]; // e.g., CS2113/B+
-        return new ModuleAddCommand(index, moduleGrade);
+        return new AddCommand(index, moduleGrade);
     }
 
     private Command parseRemove(String args) throws ParseException {
@@ -83,6 +85,6 @@ public class Parser {
             throw new ParseException("Invalid student index: " + tokens[0]);
         }
         String moduleCode = tokens[1]; // e.g., CS2113
-        return new ModuleRemoveCommand(index, moduleCode);
+        return new RemoveCommand(index, moduleCode);
     }
 }

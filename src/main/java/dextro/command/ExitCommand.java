@@ -8,6 +8,6 @@ public class ExitCommand implements Command{
     }
 
     public CommandResult execute(StudentDatabase studentDatabase) {
-        return new CommandResult("Exiting", true);
+        return new CommandResult("Goodbye!", true);
     }
 }
