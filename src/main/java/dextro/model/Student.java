@@ -43,10 +43,6 @@ public class Student {
         return course.isEmpty() ? "N.A." : course;
     }
 
-    public List<Module> getModules() {
-        return modules;
-    }
-
     @Override
     public String toString() {
         return name + "/" +

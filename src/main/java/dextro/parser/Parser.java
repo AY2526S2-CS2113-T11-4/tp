@@ -17,22 +17,15 @@ public class Parser {
         String commandWord = split[0].toLowerCase();
         String arguments = split.length > 1 ? split[1].trim() : "";
 
-        switch (commandWord) {
-            case Config.CMD_CREATE:
-                return parseCreate(arguments);
-            case Config.CMD_DELETE:
-                return parseDelete(arguments);
-            case Config.CMD_ADD:
-                return parseAdd(arguments);
-            case Config.CMD_REMOVE:
-                return parseRemove(arguments);
-            case Config.CMD_LIST:
-                return new ListCommand();
-            case Config.CMD_EXIT:
-                return new ExitCommand();
-            default:
-                throw new ParseException("Unknown command: " + commandWord);
-        }
+        return switch (commandWord) {
+            case Config.CMD_CREATE -> parseCreate(arguments);
+            case Config.CMD_DELETE -> parseDelete(arguments);
+            case Config.CMD_ADD -> parseAdd(arguments);
+            case Config.CMD_REMOVE -> parseRemove(arguments);
+            case Config.CMD_LIST -> new ListCommand();
+            case Config.CMD_EXIT -> new ExitCommand();
+            default -> throw new ParseException("Unknown command: " + commandWord);
+        };
     }
 
     private Command parseCreate(String args) throws ParseException {

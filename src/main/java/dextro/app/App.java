@@ -1,13 +1,12 @@
 package dextro.app;
 
-import dextro.parser.Parser;
+import java.util.Scanner;
 import dextro.command.Command;
 import dextro.command.CommandResult;
-import dextro.model.record.StudentDatabase;
 import dextro.exception.ParseException;
+import dextro.model.record.StudentDatabase;
+import dextro.parser.Parser;
 import dextro.ui.Ui;
-
-import java.util.Scanner;
 
 public class App {
 
