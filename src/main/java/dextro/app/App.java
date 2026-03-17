@@ -40,7 +40,7 @@ public class App {
                 }
 
             } catch (ParseException e) {
-                Ui.show("Parse Error: " + e.getMessage());
+                Ui.show("Error: " + e.getMessage());
             } catch (CommandException e) {
                 Ui.show("Error: " + e.getMessage());
             } catch (Exception e) {
