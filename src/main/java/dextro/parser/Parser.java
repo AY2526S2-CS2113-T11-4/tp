@@ -46,13 +46,9 @@ public class Parser {
         return new CreateCommand(name, phone, email, address, course);
     }
 
-    private Command parseDelete(String args) throws ParseException {
-        try {
-            int index = Integer.parseInt(args);
-            return new DeleteCommand(index);
-        } catch (NumberFormatException e) {
-            throw new ParseException("Invalid index for delete: " + args);
-        }
+    private Command parseDelete(String args) {
+        int index = Integer.parseInt(args);
+        return new DeleteCommand(index);
     }
 
     private Command parseAdd(String args) throws ParseException {
