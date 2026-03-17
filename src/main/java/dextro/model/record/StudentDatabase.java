@@ -16,6 +16,10 @@ public class StudentDatabase {
         return studentList.get(index);
     }
 
+    public Student removeStudent(int index) {
+        return studentList.remove(index);
+    }
+
     public int getStudentCount() {
         return studentList.size();
     }

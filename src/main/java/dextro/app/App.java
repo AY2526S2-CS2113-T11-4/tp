@@ -3,6 +3,7 @@ package dextro.app;
 import dextro.command.Command;
 import dextro.command.CommandResult;
 import dextro.exception.ParseException;
+import dextro.exception.CommandException;
 import dextro.model.record.StudentDatabase;
 import dextro.parser.Parser;
 import dextro.ui.Ui;
@@ -39,7 +40,16 @@ public class App {
                 }
 
             } catch (ParseException e) {
+                Ui.show("Parse Error: " + e.getMessage());
+            } catch (CommandException e) {
                 Ui.show("Error: " + e.getMessage());
+            } catch (Exception e) {
+
+
+
+
+                Ui.show("Unexpected error: " + e.getMessage());
+                e.printStackTrace();
             }
         }
     }
