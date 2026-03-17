@@ -56,6 +56,10 @@ public class Student {
         modules.add(module);
     }
 
+    public boolean removeModule(String moduleCode) {
+        return modules.removeIf(m -> m.getCode().equalsIgnoreCase(moduleCode));
+    }
+
     public List<Module> getModules() {
         return modules;
     }
