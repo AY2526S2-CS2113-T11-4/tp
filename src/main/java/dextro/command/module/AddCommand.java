@@ -15,7 +15,7 @@ public class AddCommand implements Command {
 
     public AddCommand(int index, String moduleCode, Grade grade) {
         this.index = index;
-        this.moduleCode = moduleCode;
+        this.moduleCode = moduleCode.toUpperCase();
         this.grade = grade;
     }
 

@@ -80,4 +80,37 @@ class AddCommandTest {
 
         assertEquals(2, student.getModules().size());
     }
+
+    @Test
+    void execute_lowercaseModuleCode_convertedToUppercase() {
+        // Setup
+        StudentDatabase db = new StudentDatabase();
+        Student student = new Student.Builder("John").build();
+        db.addStudent(student);
+
+        AddCommand command = new AddCommand(1, "cs2113", Grade.A);
+
+        // Execute
+        command.execute(db);
+
+        // Assert module stored in uppercase
+        assertEquals(1, student.getModules().size());
+
+        Module module = student.getModules().get(0);
+        assertEquals("CS2113", module.getCode()); // should be uppercase
+    }
+
+    @Test
+    void execute_mixedCaseModuleCode_convertedToUppercase() {
+        StudentDatabase db = new StudentDatabase();
+        Student student = new Student.Builder("John").build();
+        db.addStudent(student);
+
+        AddCommand command = new AddCommand(1, "cS2113", Grade.A);
+
+        command.execute(db);
+
+        Module module = student.getModules().get(0);
+        assertEquals("CS2113", module.getCode());
+    }
 }
