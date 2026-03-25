@@ -162,6 +162,8 @@ public class Parser {
         }
 
         return new EditCommand(index - 1, name, phone, email, address, course, moduleCode, grade);
+    }
+    
     private Command parseStatus(String args) throws ParseException {
         try {
             int index = Integer.parseInt(args);

@@ -60,7 +60,7 @@ public class EditCommand implements Command {
             }
         }
 
-        db.updatedStudent(index, updatedStudent);
+        db.updateStudent(index, updatedStudent);
         return new CommandResult("Student updated successfully.");
     }
 }
