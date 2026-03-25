@@ -28,7 +28,7 @@ public class StudentDatabase {
         return studentList;
     }
 
-    public void updatedStudent(int index, Student updatedStudent) {
+    public void updateStudent(int index, Student updatedStudent) {
         studentList.set(index, updatedStudent);
     }
 }
