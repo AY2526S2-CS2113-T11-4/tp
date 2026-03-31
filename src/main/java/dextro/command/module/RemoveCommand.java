@@ -2,6 +2,8 @@ package dextro.command.module;
 
 import dextro.command.Command;
 import dextro.command.CommandResult;
+import dextro.exception.CommandException;
+import dextro.model.Module;
 import dextro.model.Student;
 import dextro.model.record.StudentDatabase;
 
@@ -9,6 +11,7 @@ public class RemoveCommand implements Command {
 
     private final int index;
     private final String moduleCode;
+    private Module removedModule = null;
 
     public RemoveCommand(int index, String moduleCode) {
         this.index = index;
@@ -24,6 +27,14 @@ public class RemoveCommand implements Command {
 
         Student student = db.getStudent(index - 1);
 
+        // Find the module before removing it
+        for (Module m : student.getModules()) {
+            if (m.getCode().equalsIgnoreCase(moduleCode)) {
+                removedModule = m;
+                break;
+            }
+        }
+
         boolean removed = student.removeModule(moduleCode);
         if (removed) {
             return new CommandResult("Removed module " + moduleCode + " from " + student.getName());
@@ -34,5 +45,25 @@ public class RemoveCommand implements Command {
         );
 
 
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        if (removedModule == null) {
+            throw new CommandException("Cannot undo: remove command was not executed or module was not found");
+        }
+        if (index < 1 || index > db.getStudentCount()) {
+            throw new CommandException("Cannot undo: invalid student index");
+        }
+
+        Student student = db.getStudent(index - 1);
+        student.addModule(removedModule);
+
+        return new CommandResult("Undone: Module removal of " + moduleCode + " for " + student.getName());
+    }
+
+    @Override
+    public boolean isUndoable() {
+        return true;
     }
 }

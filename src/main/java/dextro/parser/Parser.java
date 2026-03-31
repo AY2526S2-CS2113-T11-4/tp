@@ -1,11 +1,13 @@
 package dextro.parser;
 
 import dextro.command.Command;
+import dextro.command.CommandHistory;
 import dextro.command.CreateCommand;
 import dextro.command.DeleteCommand;
 import dextro.command.ExitCommand;
 import dextro.command.ListCommand;
 import dextro.command.StatusCommand;
+import dextro.command.UndoCommand;
 import dextro.command.module.AddCommand;
 import dextro.command.module.RemoveCommand;
 import dextro.command.EditCommand;
@@ -14,6 +16,11 @@ import dextro.exception.ParseException;
 import dextro.model.Grade;
 
 public class Parser {
+    private CommandHistory history;
+
+    public void setCommandHistory(CommandHistory history) {
+        this.history = history;
+    }
 
     public Command parse(String userInput) throws ParseException {
         if (userInput.isBlank()) {
@@ -31,6 +38,7 @@ public class Parser {
         case Config.CMD_REMOVE -> parseRemove(arguments);
         case Config.CMD_LIST -> new ListCommand();
         case Config.CMD_STATUS -> parseStatus(arguments);
+        case Config.CMD_UNDO -> parseUndo();
         case Config.CMD_EXIT -> new ExitCommand();
         case Config.CMD_EDIT -> parseEdit(arguments);
         default -> throw new ParseException("Unknown command: " + commandWord);
@@ -171,5 +179,12 @@ public class Parser {
         } catch (NumberFormatException e) {
             throw new ParseException("Invalid index for status: " + args);
         }
+    }
+
+    private Command parseUndo() throws ParseException {
+        if (history == null) {
+            throw new ParseException("Command history not initialized");
+        }
+        return new UndoCommand(history);
     }
 }
