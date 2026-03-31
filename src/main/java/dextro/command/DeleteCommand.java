@@ -17,11 +17,9 @@ public class DeleteCommand implements Command {
     @Override
     public CommandResult execute(StudentDatabase db, Storage storage) throws CommandException {
         try {
-            Student deletedStudent = db.removeStudent(index - 1);
-            storage.saveStudentList(db);
-
             deletedIndex = index - 1;
             deletedStudent = db.removeStudent(deletedIndex);
+            storage.saveStudentList(db);
             return new CommandResult("Successfully deleted student:"
                     + System.lineSeparator() + deletedStudent.toString());
 
