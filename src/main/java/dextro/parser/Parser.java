@@ -1,6 +1,15 @@
 package dextro.parser;
 
-import dextro.command.*;
+import dextro.command.Command;
+import dextro.command.CommandHistory;
+import dextro.command.CreateCommand;
+import dextro.command.DeleteCommand;
+import dextro.command.EditCommand;
+import dextro.command.ExitCommand;
+import dextro.command.SearchCommand;
+import dextro.command.ListCommand;
+import dextro.command.StatusCommand;
+import dextro.command.UndoCommand;
 import dextro.command.module.AddCommand;
 import dextro.command.module.RemoveCommand;
 import dextro.config.Config;
