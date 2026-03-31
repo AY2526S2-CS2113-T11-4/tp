@@ -1,6 +1,7 @@
 package dextro.command;
 
 import dextro.app.Storage;
+import dextro.exception.CommandException;
 import dextro.model.record.StudentDatabase;
 import dextro.model.Student;
 
@@ -26,5 +27,15 @@ public class ListCommand implements Command {
         }
 
         return new CommandResult(sb.toString().trim(), false);
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        throw new CommandException("Cannot undo list command");
+    }
+
+    @Override
+    public boolean isUndoable() {
+        return false;
     }
 }

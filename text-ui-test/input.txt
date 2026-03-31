@@ -1,5 +1,42 @@
-James Gosling
-hi
+create n/John p/91234567e/test@email.com
+list
+create n/John n/Jane
+list
+create n/Johnn/Jane
+list
+create n/John p/91234567 a/Block n/Street
+list
+create n/ p/91234567
+list
+create n/    p/91234567
+list
+create n/John p/        e/test@test.com
+list
+create n/John p/09999999
+list
+create n/John p/9123456
+list
+create n/John e/a@b.c
+list
+create n/John e/a@b..com
+list
+create n/John e/a@b.com.
+list
+create    n/John
+list
 create
-create n/hi e/despacito@mail.com a/house c/CEG p/4324923
+list
+edit 1
+list
+edit 1 m/CS2113/
+list
+edit 1 m//A
+list
+create n/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+list
+create n/John a/$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+list
+create n/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+list
+create n/John a/$$$$$$$$$$$$$$$$$$$$$$$$ssssssssssssssssssssssssssss%%%%%%%%%%%%%%%%%!!!!!!!!##############################################################################################################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$$$$
 list

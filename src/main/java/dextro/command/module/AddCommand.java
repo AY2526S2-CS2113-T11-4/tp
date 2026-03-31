@@ -3,6 +3,7 @@ package dextro.command.module;
 import dextro.app.Storage;
 import dextro.command.Command;
 import dextro.command.CommandResult;
+import dextro.exception.CommandException;
 import dextro.model.Grade;
 import dextro.model.Module;
 import dextro.model.Student;
@@ -13,6 +14,7 @@ public class AddCommand implements Command {
     private final int index;
     private final String moduleCode;
     private final Grade grade;
+    private boolean wasExecuted = false;
 
     public AddCommand(int index, String moduleCode, Grade grade) {
         this.index = index;
@@ -31,9 +33,34 @@ public class AddCommand implements Command {
         Module module = new Module(moduleCode, grade);
         student.addModule(module);
         storage.saveStudentList(db);
+        wasExecuted = true;
 
         return new CommandResult(
                 "Added module " + moduleCode + " (" + grade + ") to " + student.getName()
         );
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        if (!wasExecuted) {
+            throw new CommandException("Cannot undo: add command was not executed");
+        }
+        if (index < 1 || index > db.getStudentCount()) {
+            throw new CommandException("Cannot undo: invalid student index");
+        }
+
+        Student student = db.getStudent(index - 1);
+        boolean removed = student.removeModule(moduleCode);
+
+        if (!removed) {
+            throw new CommandException("Cannot undo: module not found");
+        }
+
+        return new CommandResult("Undone: Module addition of " + moduleCode + " for " + student.getName());
+    }
+
+    @Override
+    public boolean isUndoable() {
+        return true;
     }
 }
