@@ -15,6 +15,11 @@ public class DeleteCommand implements Command {
     }
 
     @Override
+    public CommandResult execute(StudentDatabase db) throws CommandException {
+        return null;
+    }
+
+    @Override
     public CommandResult execute(StudentDatabase db, Storage storage) throws CommandException {
         try {
             deletedIndex = index - 1;
@@ -25,6 +30,11 @@ public class DeleteCommand implements Command {
         } catch (IndexOutOfBoundsException e) {
             throw new CommandException("The student at index " + index + " does not exist.");
         }
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        return null;
     }
 
     @Override

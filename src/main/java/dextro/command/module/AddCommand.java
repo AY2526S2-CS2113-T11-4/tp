@@ -23,6 +23,11 @@ public class AddCommand implements Command {
     }
 
     @Override
+    public CommandResult execute(StudentDatabase db) throws CommandException {
+        return null;
+    }
+
+    @Override
     public CommandResult execute(StudentDatabase db, Storage storage) {
         if (index < 1 || index > db.getStudentCount()) {
             return new CommandResult("Invalid student index");
@@ -38,6 +43,11 @@ public class AddCommand implements Command {
         return new CommandResult(
                 "Added module " + moduleCode + " (" + grade + ") to " + student.getName()
         );
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        return null;
     }
 
     @Override

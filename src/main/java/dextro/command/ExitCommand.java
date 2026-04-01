@@ -9,8 +9,18 @@ public class ExitCommand implements Command{
 
     }
 
+    @Override
+    public CommandResult execute(StudentDatabase db) throws CommandException {
+        return null;
+    }
+
     public CommandResult execute(StudentDatabase studentDatabase, Storage storage) {
         return new CommandResult("Goodbye!", true);
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        return null;
     }
 
     @Override

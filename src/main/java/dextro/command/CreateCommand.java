@@ -23,6 +23,11 @@ public class CreateCommand implements Command {
     }
 
     @Override
+    public CommandResult execute(StudentDatabase db) throws CommandException {
+        return null;
+    }
+
+    @Override
     public CommandResult execute(StudentDatabase db, Storage storage) {
         Student student = new Student.Builder(name)
                 .phone(phone)
@@ -49,6 +54,11 @@ public class CreateCommand implements Command {
         }
         Student removed = db.removeStudent(createdIndex);
         return new CommandResult("Undone: Student creation of " + removed.getName());
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        return null;
     }
 
     @Override

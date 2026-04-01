@@ -20,6 +20,11 @@ public class RemoveCommand implements Command {
     }
 
     @Override
+    public CommandResult execute(StudentDatabase db) throws CommandException {
+        return null;
+    }
+
+    @Override
     public CommandResult execute(StudentDatabase db, Storage storage) {
 
         if (index < 1 || index > db.getStudentCount()) {
@@ -47,6 +52,11 @@ public class RemoveCommand implements Command {
         );
 
 
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db) throws CommandException {
+        return null;
     }
 
     @Override
