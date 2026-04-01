@@ -1,11 +1,7 @@
 package dextro.command;
 
 import dextro.exception.CommandException;
-
-import java.util.List;
-
 import dextro.app.Storage;
-import dextro.model.Student;
 import dextro.model.record.StudentDatabase;
 
 public interface Command {
