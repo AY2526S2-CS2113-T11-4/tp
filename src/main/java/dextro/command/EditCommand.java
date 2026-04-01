@@ -31,7 +31,7 @@ public class EditCommand implements Command {
     }
 
     @Override
-    public CommandResult undo(StudentDatabase db) throws CommandException {
+    public CommandResult execute(StudentDatabase db) throws CommandException {
         return null;
     }
 
@@ -74,7 +74,7 @@ public class EditCommand implements Command {
     }
 
     @Override
-    public CommandResult execute(StudentDatabase db) throws CommandException {
+    public CommandResult undo(StudentDatabase db) throws CommandException {
         return null;
     }
 
