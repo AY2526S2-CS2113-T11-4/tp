@@ -1,6 +1,7 @@
 package dextro.app;
 
 import dextro.command.Command;
+import dextro.command.CommandHistory;
 import dextro.command.CommandResult;
 import dextro.exception.ParseException;
 import dextro.exception.CommandException;
@@ -14,12 +15,15 @@ public class App {
     private final StudentDatabase db;
     private final Ui ui;
     private final Storage storage;
+    private final CommandHistory history;
 
     public App(Ui ui, Parser parser, StudentDatabase db, Storage storage) {
         this.ui = ui;
         this.parser = parser;
         this.db = db;
         this.storage = storage;
+        this.history = new CommandHistory();
+        parser.setCommandHistory(history);
     }
 
     public void run() {
@@ -36,6 +40,11 @@ public class App {
                 Command command = parser.parse(input);
                 CommandResult result = command.execute(db, storage);
                 Ui.show(result.getMessage());
+
+                // Add command to history if it's undoable
+                if (command.isUndoable()) {
+                    history.push(command);
+                }
 
                 if (result.shouldExit()) {
                     break;

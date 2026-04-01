@@ -16,6 +16,7 @@ public class EditCommand implements Command {
     private final String course;
     private final String moduleCode;
     private final Grade grade;
+    private Student previousStudent = null;
 
     public EditCommand(int index, String name, String phone, String email,
                        String address, String course, String moduleCode, Grade grade) {
@@ -36,6 +37,7 @@ public class EditCommand implements Command {
             throw new CommandException("Index should be within range.");
         }
         Student existing = db.getStudent(index);
+        previousStudent = existing;
 
         // validate moduleCode exists before making any changes
         if (moduleCode != null && existing.getModules().stream()
@@ -64,5 +66,22 @@ public class EditCommand implements Command {
         db.updateStudent(index, updatedStudent);
         storage.saveStudentList(db);
         return new CommandResult("Student updated successfully.");
+    }
+
+    @Override
+    public CommandResult undo(StudentDatabase db, Storage storage) throws CommandException {
+        if (previousStudent == null) {
+            throw new CommandException("Cannot undo: edit command was not executed");
+        }
+        if (index >= db.getStudentCount() || index < 0) {
+            throw new CommandException("Cannot undo: invalid index");
+        }
+        db.updateStudent(index, previousStudent);
+        return new CommandResult("Undone: Student edit of " + previousStudent.getName());
+    }
+
+    @Override
+    public boolean isUndoable() {
+        return true;
     }
 }

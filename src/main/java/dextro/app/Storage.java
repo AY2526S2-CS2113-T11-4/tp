@@ -159,7 +159,9 @@ public class Storage {
 
         for (String entry : moduleBlock.split(",")) {
             String trimmed = entry.trim();
-            if (trimmed.isEmpty()) continue;
+            if (trimmed.isEmpty()) {
+                continue;
+            }
 
             String[] parts = trimmed.split("/", 2);
             if (parts.length != 2) {
