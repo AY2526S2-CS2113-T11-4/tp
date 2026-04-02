@@ -40,3 +40,21 @@ create n/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssssssssssssssssssssssss
 list
 create n/John a/$$$$$$$$$$$$$$$$$$$$$$$$ssssssssssssssssssssssssssss%%%%%%%%%%%%%%%%%!!!!!!!!##############################################################################################################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$$$$
 list
+create n/Alice p/81234567 e/alice@u.nus.edu a/PGP c/Computer Science
+create n/Bob p/98765432 e/bob@u.nus.edu a/RC4 c/Information Systems
+create n/Charlie p/88888888 e/charlie@u.nus.edu a/Cinnamon c/Business Analytics
+add 6 CS2113/A
+add 6 CS2101/B+
+add 7 CS2113/B
+add 8 IS1103/A+
+search c/Science
+search m/CS2113
+search c/Science m/CS2113
+search Alice
+search
+sort name
+sort course
+sort cap
+sort mcs
+sort age
+exit

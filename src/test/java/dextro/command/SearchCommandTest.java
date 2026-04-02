@@ -1,4 +1,3 @@
-/*
 package dextro.command;
 
 import dextro.exception.CommandException;
@@ -90,4 +89,3 @@ public class SearchCommandTest {
         assertFalse(command.isUndoable());
     }
 }
-*/

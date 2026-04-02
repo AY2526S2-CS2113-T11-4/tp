@@ -55,12 +55,6 @@ public class SearchCommand implements Command {
         return new CommandResult(sb.toString().trim(), false);
     }
 
-    /**
-     * @param db
-     * @param storage
-     * @return
-     * @throws CommandException
-     */
     @Override
     public CommandResult execute(StudentDatabase db, Storage storage) throws CommandException {
         return null;
@@ -71,12 +65,7 @@ public class SearchCommand implements Command {
         throw new CommandException("Cannot undo search command");
     }
 
-    /**
-     * @param db
-     * @param storage
-     * @return
-     * @throws CommandException
-     */
+
     @Override
     public CommandResult undo(StudentDatabase db, Storage storage) throws CommandException {
         return null;
