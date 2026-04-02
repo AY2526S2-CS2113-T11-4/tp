@@ -19,7 +19,7 @@ public class SearchCommand implements Command {
     }
 
     @Override
-    public CommandResult execute(StudentDatabase db) throws CommandException {
+    public CommandResult execute(StudentDatabase db, Storage storage) throws CommandException {
         List<Student> students = db.getAllStudents();
         StringBuilder sb = new StringBuilder();
         boolean found = false;
@@ -56,7 +56,7 @@ public class SearchCommand implements Command {
     }
 
     @Override
-    public CommandResult execute(StudentDatabase db, Storage storage) throws CommandException {
+    public CommandResult execute(StudentDatabase db) throws CommandException {
         return null;
     }
 
