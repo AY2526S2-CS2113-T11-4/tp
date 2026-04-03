@@ -14,6 +14,12 @@
 
 The `StatusCommand` allows users to view detailed information about a specific student, including their CAP, total MCs completed, and progress status.
 
+### Implementation: Agara
+
+### Sort Command 
+
+The `SortCommand` allows users to view a temporary list of all users sorted by certain categories selected by the user, such as name, course, and mcs.
+
 ##### Class Diagram
 
 ![StatusCommandClassDiagram](images/StatusCommandClassDiagram.png)
