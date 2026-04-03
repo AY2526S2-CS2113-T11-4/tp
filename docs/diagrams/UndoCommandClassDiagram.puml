@@ -1,0 +1,50 @@
+@startuml UndoCommandClassDiagram
+skinparam classAttributeIconSize 0
+hide circle
+
+interface Command {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class UndoCommand {
+    -history: CommandHistory
+    +UndoCommand(CommandHistory)
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class CommandHistory {
+    -history: Stack<Command>
+    +push(Command): void
+    +pop(): Command
+    +isEmpty(): boolean
+    +clear(): void
+}
+
+class StudentDatabase {
+    +getAllStudents(): List<Student>
+}
+
+class Storage {
+    +save(StudentDatabase): void
+}
+
+class CommandResult {
+    -message: String
+    -exit: boolean
+    +CommandResult(String, boolean)
+    +getMessage(): String
+    +shouldExit(): boolean
+}
+
+Command <|.. UndoCommand
+UndoCommand --> CommandHistory : uses
+UndoCommand ..> StudentDatabase : uses
+UndoCommand ..> Storage : uses
+UndoCommand ..> CommandResult : creates
+CommandHistory "1" o-- "*" Command : stores
+
+@enduml

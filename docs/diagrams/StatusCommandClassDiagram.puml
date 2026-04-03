@@ -1,0 +1,49 @@
+@startuml StatusCommandClassDiagram
+skinparam classAttributeIconSize 0
+hide circle
+
+interface Command {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class StatusCommand {
+    -index: int
+    +StatusCommand(int)
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class StudentDatabase {
+    +getAllStudents(): List<Student>
+}
+
+class Storage {
+    +save(StudentDatabase): void
+}
+
+class CommandResult {
+    -message: String
+    -exit: boolean
+    +CommandResult(String, boolean)
+    +getMessage(): String
+    +shouldExit(): boolean
+}
+
+class Student {
+    +getName(): String
+    +getCourse(): String
+    +calculateCap(): double
+    +getTotalMCs(): int
+    +getProgressStatus(): String
+}
+
+Command <|.. StatusCommand
+StatusCommand ..> StudentDatabase : uses
+StatusCommand ..> Storage : uses
+StatusCommand ..> CommandResult : creates
+StudentDatabase "1" *-- "*" Student : contains
+
+@enduml
