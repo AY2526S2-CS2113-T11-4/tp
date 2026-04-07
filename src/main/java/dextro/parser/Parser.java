@@ -229,7 +229,8 @@ public class Parser {
         if (moduleValue != null) {
             String[] parts = moduleValue.split("/");
             if (parts.length < 2 || parts[0].isBlank() || parts[1].isBlank()) {
-                throw new ParseException("Module format must be CODE/GRADE[/CREDITS] (e.g., m/CS2113/A or m/CS2113/A/2)");
+                throw new ParseException("Module format must be CODE/GRADE[/CREDITS] " +
+                        "(e.g., m/CS2113/A or m/CS2113/A/2)");
             }
             moduleCode = validateModuleCode(parts[0].trim().toUpperCase());
             grade = validateGrade(parts[1].trim().toUpperCase());

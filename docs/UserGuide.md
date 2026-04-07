@@ -95,6 +95,7 @@ When editing a student's module entry:
 
 - If the module does not exist, the program will output an error message saying that the module is not found for the student.
 - Module credits are optional. Program will default to 4 credits if not provided.
+- Module code and grade are case-insensitive
 
 ---
 
