@@ -40,9 +40,9 @@ public class SearchCommand implements Command {
                     if (m.getCode().toLowerCase().contains(moduleCode.toLowerCase())) {
                         sb.append(originalIndex).append(". ")
                                 .append(student.getName()).append(", ")
+                                .append(m.getCode()).append(": ")
                                 .append(m.getGrade().toString()).append("\n");
                         found = true;
-                        break; // Move to the next student once a module matches
                     }
                 }
             }
@@ -57,7 +57,7 @@ public class SearchCommand implements Command {
 
     @Override
     public CommandResult execute(StudentDatabase db) throws CommandException {
-        // Route this to your main logic, passing null for storage since Search doesn't use it
+        // Routed to main logic, passing null for storage since SearchCommand doesn't use it
         return this.execute(db, null);
     }
 

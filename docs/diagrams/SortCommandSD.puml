@@ -1,34 +1,71 @@
 @startuml
 actor User
-participant ":App" as App
-participant ":Parser" as Parser
-participant ":SortCommand" as SortCmd
-participant ":StudentDatabase" as DB
+participant ":SortCommand" as SC
+participant "db:StudentDatabase" as DB
+participant "sortedList:ArrayList" as AL
+participant "student:Student" as S
 
-title - SortCommand - Sequence Diagram
+User -> SC : execute(db)
+activate SC
 
-User -> App : "sort cap"
-App -> Parser : parse("sort cap")
-Parser -> SortCmd : new SortCommand("cap")
-Parser --> App : command
-App -> SortCmd : execute(db, storage)
-SortCmd -> DB : getAllStudents()
-DB --> SortCmd : students
-alt students.isEmpty()
-    SortCmd --> App : CommandResult("No students to sort.")
-else students not empty
-    SortCmd -> SortCmd : new ArrayList<>(students)
-    alt category == "name"
-        SortCmd -> SortCmd : sort by name (case-insensitive)
-    else category == "course"
-        SortCmd -> SortCmd : sort by course (case-insensitive)
-    else category == "cap"
-        SortCmd -> SortCmd : sort by calculateCap() descending
-    else category == "mcs"
-        SortCmd -> SortCmd : sort by getTotalMCs() descending
-    end
-    SortCmd -> SortCmd : build formatted string
-    SortCmd --> App : CommandResult(sorted list)
+SC -> DB : getAllStudents()
+activate DB
+DB --> SC : List<Student> students
+deactivate DB
+
+create AL
+SC -> AL : new ArrayList(students)
+activate AL
+AL --> SC
+deactivate AL
+
+alt category == "name"
+    SC -> AL : sort(Comparator.comparing(Student::getName))
+    activate AL
+    AL --> SC
+    deactivate AL
+else category == "course"
+    SC -> AL : sort(Comparator.comparing(Student::getCourse))
+    activate AL
+    AL --> SC
+    deactivate AL
+else category == "cap"
+    SC -> AL : sort(Comparator.comparingDouble(Student::calculateCap))
+    activate AL
+    AL --> SC
+    deactivate AL
+else category == "mcs"
+    SC -> AL : sort(Comparator.comparingInt(Student::getTotalMCs))
+    activate AL
+    AL --> SC
+    deactivate AL
 end
-App -> User : show result
+
+loop for each student in sortedList
+    SC -> S : toString()
+    activate S
+    S --> SC : stringRep
+    deactivate S
+
+    alt category == "cap"
+        SC -> S : calculateCap()
+        activate S
+        S --> SC : cap
+        deactivate S
+    else category == "mcs"
+        SC -> S : getTotalMCs()
+        activate S
+        S --> SC : mcs
+        deactivate S
+    end
+end
+
+create participant "result:CommandResult" as CR
+SC -> CR : new CommandResult(feedback, false)
+activate CR
+CR --> SC
+deactivate CR
+
+SC --> User : result
+deactivate SC
 @enduml

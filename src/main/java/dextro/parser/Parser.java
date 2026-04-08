@@ -214,6 +214,18 @@ public class Parser {
         int sepIndex = args.indexOf(" ");
         String attributes = (sepIndex == -1) ? "" : args.substring(sepIndex + 1);
 
+        //the command requires at least one edit field
+        if (attributes.isEmpty()) {
+            throw new ParseException("Edit requires at least one field (e.g., n/John or m/CS2113/A).");
+        }
+
+        //attributes must begin with a valid prefix
+        if (!attributes.matches("^(n/|p/|e/|a/|c/|m/).*")) {
+            throw new ParseException(
+                    "Invalid formatting. Use prefixes: n/, p/, e/, a/, c/, m/. Example: edit 1 m/CS2113/A");
+        }
+
+
         ArgumentTokenizer tokenizer = new ArgumentTokenizer(attributes, "n/", "p/", "e/", "a/", "c/", "m/");
         String name = tokenizer.getValue("n/");
         String phone = tokenizer.getValue("p/");

@@ -278,12 +278,6 @@ The sequence diagram illustrates the execution flow:
 
 The `StatusCommand` allows users to view detailed information about a specific student, including their CAP, total MCs completed, and progress status.
 
-### Implementation: Agara
-
-### Sort Command 
-
-The `SortCommand` allows users to view a temporary list of all users sorted by certain categories selected by the user, such as name, course, and mcs.
-
 ##### Class Diagram
 
 ![StatusCommandClassDiagram](images/StatusCommandClassDiagram.png)
@@ -390,13 +384,69 @@ The sequence diagram illustrates the execution flow:
 4. A loop will check if any of the student information correspond to the keyword defined by the user.
 5. The `CommandResult` will display if the student records are found.
 
+---
+
+### Implementation: Agara
+
+##### Sort Command
+
+The `SortCommand` allows users to view a temporary list of all users sorted by certain categories selected by the user, such as name, course, and mcs.
+
+##### Class Diagram
+
+![SortCommandClassDiagram](images/SortCommandClass.png)
+
+The class diagram shows the relationship between `SortCommand` and other components:
+- `SortCommand` implements the `Command` interface
+- `SortCommand` needs to reference of `Storage` and `StudentDatabase`. 
+- It interacts with `StudentDatabase` to retrieve all student records and sort them based on the specified category.
+- Although `Storage` is not used in execute method under `SortCommand`, the `Command` require it to be there. So the method signature must match `Command`.
+- All methods listed in `Command` is implemented in `SortCommand` class as there is no further child class from `SortCommand`.
+- Returns a `CommandResult` containing the sorted list of students based on the specified category.
+
+##### Sequence Diagram
+
+![SortCommandSequence](images/SortCommandSequence.png)
+
+The sequence diagram illustrates the execution flow:
+- User executes the sort command with a specified category (e.g., name, course, mcs)
+- `Parser` class parses user input and determines the command (sort) and the category
+- `SortCommand.execute()` is called with the `StudentDatabase` and `Storage`
+- The command retrieves all student records from the `StudentDatabase`
+- A `CommandResult` is returned containing the sorted list of students based on the specified category
+
+##### Search Command
+
+The `SearchCommand` allows users to search for students using certain categories, such as name, course, and mcs.
+
+##### Class Diagram
+
+![SearchCommandClassDiagram](images/SearchCommandClass.png)
+
+The class diagram shows the relationship between `SearchCommand` and other components:
+- `SearchCommand` implements the `Command` interface
+- `SearchCommand` needs to reference of `Storage` and `StudentDatabase`. 
+- It interacts with `StudentDatabase` to retrieve relevant student records based on the specified search criteria
+- Although `Storage` is not used in execute method under `SearchCommand`, the `Command` require it to be there. So the method signature must match `Command`.
+- All methods listed in `Command` is implemented in `SearchCommand` class as there is no further child class from `SearchCommand`.
+- Returns a `CommandResult` containing the search results based on the specified search criteria
+
+##### Sequence Diagram
+
+The sequence diagram illustrates the execution flow:
+- User executes the search command with specified search criteria (e.g., name, course, mcs)
+- `Parser` class parses user input and determines the command (search) and the search criteria
+- `SearchCommand.execute()` is called with the `StudentDatabase` and `Storage`
+- The command retrieves relevant student records from the `StudentDatabase` based on the specified search criteria
+- A `CommandResult` is returned containing the search results based on the specified search criteria
+
 ## Product scope
 ### Target user profile
 
 The target user is an Administrative Staff member (Admin) at the National University of Singapore (NUS). These users are:
 - Responsible for managing large cohorts of students and their academic progression
 - Comfortable using Command Line Interfaces (CLI) for fast data entry and retrieval
-- In need of a centralized, local system to manage student contact details and module grades without the overhead of a heavy web-based GUI.
+- In need of a centralised, local system to manage student contact details and module grades without the overhead of a heavy web-based GUI.
 
 ### Value proposition
 

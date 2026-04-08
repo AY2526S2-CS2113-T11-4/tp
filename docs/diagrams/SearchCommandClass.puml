@@ -1,0 +1,39 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Command {
+    + execute(db: StudentDatabase, storage: Storage): CommandResult
+    + execute(db: StudentDatabase): CommandResult
+    + undo(db: StudentDatabase): CommandResult
+    + undo(db: StudentDatabase, storage: Storage): CommandResult
+    + isUndoable(): boolean
+}
+
+class SearchCommand implements Command {
+    - course: String
+    - moduleCode: String
+    + SearchCommand(course: String, moduleCode: String)
+    + execute(db: StudentDatabase, storage: Storage): CommandResult
+    + execute(db: StudentDatabase): CommandResult
+    + undo(db: StudentDatabase): CommandResult
+    + undo(db: StudentDatabase, storage: Storage): CommandResult
+    + isUndoable(): boolean
+}
+
+class StudentDatabase {
+    + getAllStudents(): List<Student>
+}
+
+class Storage {
+    +save(StudentDatabase): void
+}
+
+class CommandResult {
+    + CommandResult(feedbackToUser: String, showHelp: boolean)
+    + CommandResult(feedbackToUser: String)
+}
+
+SearchCommand ..> StudentDatabase : uses >
+SearchCommand ..> Storage : uses >
+SearchCommand ..> CommandResult : produces >
+@enduml

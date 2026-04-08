@@ -69,8 +69,25 @@ public class SearchCommandTest {
         SearchCommand command = new SearchCommand(null, "CS2113");
         CommandResult result = command.execute(db);
 
-        String expectedOutput = "1. John Doe, A\n" +
-                "2. Jane Smith, B";
+        String expectedOutput = "1. John Doe, CS2113: A\n" +
+                "2. Jane Smith, CS2113: B";
+
+        assertEquals(expectedOutput, result.getMessage());
+    }
+
+    @Test
+    public void execute_searchByModuleMultipleMatches_success() {
+        // Add another CS module to John to test multiple matches for a single student
+        Student john = db.getAllStudents().get(0);
+        john.addModule(new Module("CS2040", Grade.B_PLUS));
+
+        // Search for "CS", which should match both CS2113 and CS2040 for John
+        SearchCommand command = new SearchCommand(null, "CS");
+        CommandResult result = command.execute(db);
+
+        String expectedOutput = "1. John Doe, CS2113: A\n" +
+                "1. John Doe, CS2040: B+\n" +
+                "2. Jane Smith, CS2113: B";
         assertEquals(expectedOutput, result.getMessage());
     }
 
