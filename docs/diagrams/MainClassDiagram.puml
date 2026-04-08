@@ -1,0 +1,37 @@
+@startuml MainClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class Main {
+    +{static} main(String[]): void
+}
+
+class App {
+    +run(): void
+}
+
+class Ui {
+    +readCommand(): String
+    +{static} show(String): void
+}
+
+class Parser {
+    +parse(String): Command
+}
+
+class Storage {
+    +loadStudentList(): List<Student>
+    +saveStudentList(StudentDatabase): void
+}
+
+class StudentDatabase {
+    +addStudent(Student): void
+    +getAllStudents(): List<Student>
+}
+
+Main ..> App : creates
+Main ..> Ui : creates
+Main ..> Parser : creates
+Main ..> Storage : creates
+Main ..> StudentDatabase : creates
+@enduml

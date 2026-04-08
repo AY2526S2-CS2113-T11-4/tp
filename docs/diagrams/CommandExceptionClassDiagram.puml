@@ -1,0 +1,29 @@
+@startuml CommandExceptionClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class RuntimeException {
+}
+
+class CommandException {
+    +CommandException(String)
+}
+
+class ParseException {
+    +ParseException(String)
+}
+
+class App {
+    +run(): void
+}
+
+class Ui {
+    +show(String): void
+}
+
+RuntimeException <|-- CommandException
+RuntimeException <|-- ParseException
+App ..> CommandException : catches
+App ..> ParseException : catches
+App --> Ui : uses
+@enduml

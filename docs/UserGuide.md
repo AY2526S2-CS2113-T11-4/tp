@@ -216,6 +216,7 @@ add 1 m/MA1511/B+/2
 ```
 Adding duplicate modules under the same student is allowed, to accommodate module retakes.
 
+Modules are validated against a pattern that fits all existing NUS module codes; non-existent modules that follow the same format are allowed.
 
 ---
 
@@ -239,11 +240,19 @@ module code is not case sensitive.
 
 ##  Command Format Notes
 - `n/` → Name
+  - Must be less than 100 characters long
 - `p/` → Phone number
+  - Only valid Singaporean mobile number is allowed, i.e. begins with 8 or 9.
 - `e/` → Email address
+  - Local portion allows only letters, numbers and special chars `. _ % + -`
+  - Must contain a `@` symbol
+  - Domain portion allows only letters, numbers, hyphens and at least one dot `.`
 - `a/` → Home address
+  - Must be less than 200 characters long
 - `c/` → Course
+  - Must be less than 100 characters long
 - `m/` → Module
+  - Must follow the same format as actual NUS modules. Strings that follow the same format are allowed
 - `<student_id>` → Index shown in the list
 
 ---

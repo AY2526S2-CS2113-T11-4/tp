@@ -1,0 +1,43 @@
+@startuml ModuleClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class Module {
+    -code: String
+    -grade: Grade
+    -credits: int
+    +Module(String, Grade, int)
+    +Module(String, Grade)
+    +getCode(): String
+    +getGrade(): Grade
+    +getCredits(): int
+    +toString(): String
+}
+
+enum Grade {
+    +getCap(): double
+    +getCountsToGpa(): boolean
+    +getCountsToCompletion(): boolean
+    +fromString(String): Grade
+}
+
+class Student {
+    -modules: List<Module>
+    +addModule(Module): void
+    +removeModule(String): boolean
+    +getModules(): List<Module>
+}
+
+class AddCommand {
+    +execute(StudentDatabase, Storage): CommandResult
+}
+
+class RemoveCommand {
+    +execute(StudentDatabase, Storage): CommandResult
+}
+
+Module --> Grade : uses
+Student "1" o-- "*" Module : has
+AddCommand ..> Module : creates
+RemoveCommand ..> Module : removes
+@enduml

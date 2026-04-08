@@ -1,0 +1,62 @@
+@startuml RemoveCommandClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+interface Command {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class RemoveCommand {
+    -index: int
+    -moduleCode: String
+    -removedModule: Module
+    +RemoveCommand(int, String)
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class StudentDatabase {
+    +getStudent(int): Student
+    +getStudentCount(): int
+}
+
+class Storage {
+    +saveStudentList(StudentDatabase): void
+}
+
+class Student {
+    +getModules(): List<Module>
+    +removeModule(String): boolean
+    +addModule(Module): void
+    +getName(): String
+}
+
+class Module {
+    -code: String
+    -grade: Grade
+    -credits: int
+    +getCode(): String
+}
+
+class CommandResult {
+    -message: String
+    -exit: boolean
+    +getMessage(): String
+    +shouldExit(): boolean
+}
+
+class CommandException {
+    +CommandException(String)
+}
+
+Command <|.. RemoveCommand
+RemoveCommand ..> StudentDatabase : uses
+RemoveCommand ..> Storage : uses
+RemoveCommand ..> CommandResult : creates
+RemoveCommand ..> CommandException : throws
+RemoveCommand --> Module : stores ref
+Student "1" o-- "*" Module : has
+@enduml

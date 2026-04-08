@@ -1,0 +1,15 @@
+@startuml ArchitectureSequence
+skinparam style strictuml
+actor User
+
+User -> UI : "delete 1"
+UI -> App : readCommand()
+App -> Parser : parse("delete 1")
+Parser --> App : <<DeleteCommand>>
+App -> Model : execute(db, storage)\n[DeleteCommand]
+Model --> App : <<CommandResult>>
+App -> Storage : saveStudentList(db)\n[via DeleteCommand]
+Storage --> App : void
+App -> UI : show(result.getMessage())
+UI --> User : display result
+@enduml

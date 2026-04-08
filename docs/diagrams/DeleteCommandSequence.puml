@@ -1,0 +1,28 @@
+@startuml DeleteCommandSequence
+skinparam style strictuml
+actor User
+
+User -> App : enter "delete 1"
+App -> Parser : parse(input)
+Parser -> Parser : parseDelete("1")
+Parser -> DeleteCommand : new DeleteCommand(1)
+DeleteCommand --> Parser : deleteCommand
+Parser --> App : deleteCommand
+App -> DeleteCommand : execute(db, storage)
+
+alt index out of bounds
+    DeleteCommand -> CommandException : throw CommandException
+    CommandException --> App : exception
+    App -> Ui : show("Error: " + message)
+    Ui --> User : display error
+else valid index
+    DeleteCommand -> StudentDatabase : removeStudent(0)
+    StudentDatabase --> DeleteCommand : deletedStudent
+    DeleteCommand -> Storage : saveStudentList(db)
+    DeleteCommand -> CommandResult : new CommandResult("Successfully deleted student: ...")
+    CommandResult --> DeleteCommand : result
+    DeleteCommand --> App : result
+    App -> Ui : show(result.getMessage())
+    Ui --> User : display confirmation
+end
+@enduml

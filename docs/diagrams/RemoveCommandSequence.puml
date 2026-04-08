@@ -1,0 +1,43 @@
+@startuml RemoveCommandSequence
+skinparam style strictuml
+actor User
+
+User -> App : enter "remove 1 CS2113"
+App -> Parser : parse(input)
+Parser -> Parser : parseRemove("1 CS2113")
+Parser -> RemoveCommand : new RemoveCommand(1, "CS2113")
+RemoveCommand --> Parser : removeCommand
+Parser --> App : removeCommand
+App -> RemoveCommand : execute(db, storage)
+
+alt invalid index
+    RemoveCommand -> CommandResult : new CommandResult("Invalid student index")
+    CommandResult --> App : result
+else valid index
+    RemoveCommand -> StudentDatabase : getStudent(0)
+    StudentDatabase --> RemoveCommand : student
+    RemoveCommand -> Student : getModules()
+    Student --> RemoveCommand : moduleList
+
+    loop find module in list
+        RemoveCommand -> Module : getCode()
+        Module --> RemoveCommand : code
+    end
+
+    RemoveCommand -> Student : removeModule("CS2113")
+    Student --> RemoveCommand : removed (boolean)
+
+    alt module found and removed
+        RemoveCommand -> Storage : saveStudentList(db)
+        RemoveCommand -> CommandResult : new CommandResult("Removed module CS2113 from Alice")
+    else module not found
+        RemoveCommand -> CommandResult : new CommandResult("Module CS2113 not found for Alice")
+    end
+
+    CommandResult --> RemoveCommand : result
+    RemoveCommand --> App : result
+end
+
+App -> Ui : show(result.getMessage())
+Ui --> User : display confirmation
+@enduml

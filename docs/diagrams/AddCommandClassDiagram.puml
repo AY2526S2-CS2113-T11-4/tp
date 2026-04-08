@@ -1,0 +1,66 @@
+@startuml AddCommandClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+interface Command {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class AddCommand {
+    -index: int
+    -moduleCode: String
+    -grade: Grade
+    -credits: Integer
+    -wasExecuted: boolean
+    +AddCommand(int, String, Grade, Integer)
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class StudentDatabase {
+    +getStudent(int): Student
+    +getStudentCount(): int
+}
+
+class Storage {
+    +saveStudentList(StudentDatabase): void
+}
+
+class Student {
+    +addModule(Module): void
+    +removeModule(String): boolean
+    +getName(): String
+}
+
+class Module {
+    -code: String
+    -grade: Grade
+    -credits: int
+    +Module(String, Grade, int)
+    +Module(String, Grade)
+}
+
+enum Grade {
+    +getCap(): double
+    +getCountsToGpa(): boolean
+}
+
+class CommandResult {
+    -message: String
+    -exit: boolean
+    +getMessage(): String
+    +shouldExit(): boolean
+}
+
+Command <|.. AddCommand
+AddCommand ..> StudentDatabase : uses
+AddCommand ..> Storage : uses
+AddCommand ..> Module : creates
+AddCommand ..> CommandResult : creates
+AddCommand --> Grade : uses
+Student "1" o-- "*" Module : has
+Module --> Grade : uses
+@enduml

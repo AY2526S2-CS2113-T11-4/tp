@@ -1,0 +1,80 @@
+@startuml StudentClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class StudentDatabase {
+    -studentList: List<Student>
+    +StudentDatabase()
+    +StudentDatabase(List<Student>)
+    +addStudent(Student): void
+    +getStudent(int): Student
+    +removeStudent(int): Student
+    +getStudentCount(): int
+    +getAllStudents(): List<Student>
+    +updateStudent(int, Student): void
+}
+
+class Student {
+    -name: String
+    -phone: String
+    -email: String
+    -address: String
+    -course: String
+    -modules: List<Module>
+    +getName(): String
+    +getPhone(): String
+    +getEmail(): String
+    +getAddress(): String
+    +getCourse(): String
+    +addModule(Module): void
+    +removeModule(String): boolean
+    +getModules(): List<Module>
+    +calculateCap(): double
+    +getTotalMCs(): int
+    +getProgressStatus(): String
+}
+
+class "Student.Builder" as Builder {
+    -name: String
+    -phone: String
+    -email: String
+    -address: String
+    -course: String
+    +Builder(String)
+    +Builder(Student)
+    +name(String): Builder
+    +phone(String): Builder
+    +email(String): Builder
+    +address(String): Builder
+    +course(String): Builder
+    +build(): Student
+}
+
+class Module {
+    -code: String
+    -grade: Grade
+    -credits: int
+    +getCode(): String
+    +getGrade(): Grade
+    +getCredits(): int
+}
+
+enum Grade {
+    A_PLUS
+    A
+    A_MINUS
+    B_PLUS
+    B
+    ..
+    +getCap(): double
+    +getCountsToGpa(): boolean
+    +getCountsToCompletion(): boolean
+    +fromString(String): Grade
+}
+
+StudentDatabase "1" o-- "*" Student : contains
+Student "1" o-- "*" Module : has
+Module --> Grade : uses
+Builder ..> Student : builds
+Student +-- Builder
+@enduml

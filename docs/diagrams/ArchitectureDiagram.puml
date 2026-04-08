@@ -1,0 +1,47 @@
+@startuml ArchitectureDiagram
+skinparam style strictuml
+skinparam defaultFontSize 13
+skinparam componentStyle rectangle
+
+skinparam component {
+    BorderColor #444444
+    BackgroundColor #FFFFFF
+    FontStyle bold
+}
+
+skinparam rectangle {
+    BorderColor #444444
+    BackgroundColor #FFFFFF
+}
+
+actor User
+
+component [UI] as UI
+component [App] as App
+component [Parser] as Parser
+component [Model] as Model
+component [Storage] as Storage
+
+rectangle "  Main  " as Main
+
+User -down-> UI : input / output
+
+Main ..> UI      : creates
+Main ..> Parser  : creates
+Main ..> Storage : creates
+Main ..> Model   : creates
+Main ..> App     : creates & runs
+
+UI    -right-> App    : readCommand()
+App   -right-> Parser : parse(input)
+Parser ..>     App    : <<Command>>
+App   -down->  Model  : execute(db, ...)
+App   -down->  Storage : execute(..., storage)
+Storage -right-> Model : load on startup
+
+note right of Storage
+  Reads/writes
+  DextroStudentList.txt
+end note
+
+@enduml

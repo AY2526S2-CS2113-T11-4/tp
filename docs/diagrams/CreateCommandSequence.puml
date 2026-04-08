@@ -1,0 +1,31 @@
+@startuml CreateCommandSequence
+skinparam style strictuml
+actor User
+
+User -> App : enter "create n/Alice p/91234567\ne/alice@u.nus.edu c/CS"
+App -> Parser : parse(input)
+Parser -> ArgumentTokenizer : new ArgumentTokenizer(args, "n/","p/","e/","a/","c/")
+ArgumentTokenizer --> Parser : tokenMap
+Parser -> Parser : validateName(name)
+Parser -> Parser : validatePhone(phone)
+Parser -> Parser : validateEmail(email)
+Parser -> Parser : validateAddress(address)
+Parser -> CreateCommand : new CreateCommand(name, phone, email, address, course)
+CreateCommand --> Parser : createCommand
+Parser --> App : createCommand
+App -> CreateCommand : execute(db, storage)
+CreateCommand -> "Student.Builder" : new Builder(name)
+"Student.Builder" -> "Student.Builder" : phone(phone)
+"Student.Builder" -> "Student.Builder" : email(email)
+"Student.Builder" -> "Student.Builder" : address(address)
+"Student.Builder" -> "Student.Builder" : course(course)
+"Student.Builder" -> Student : build()
+Student --> CreateCommand : student
+CreateCommand -> StudentDatabase : addStudent(student)
+CreateCommand -> Storage : saveStudentList(db)
+CreateCommand -> CommandResult : new CommandResult("Student created: Alice")
+CommandResult --> CreateCommand : result
+CreateCommand --> App : result
+App -> Ui : show(result.getMessage())
+Ui --> User : display confirmation
+@enduml

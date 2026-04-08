@@ -1,0 +1,28 @@
+@startuml ListCommandSequence
+skinparam style strictuml
+actor User
+
+User -> App : enter "list"
+App -> Parser : parse(input)
+Parser -> ListCommand : new ListCommand()
+ListCommand --> Parser : listCommand
+Parser --> App : listCommand
+App -> ListCommand : execute(db, storage)
+ListCommand -> StudentDatabase : getAllStudents()
+StudentDatabase --> ListCommand : students
+
+alt students is empty
+    ListCommand -> CommandResult : new CommandResult("No students found.")
+else students present
+    loop for each student
+        ListCommand -> Student : toString()
+        Student --> ListCommand : studentString
+    end
+    ListCommand -> CommandResult : new CommandResult(formattedList)
+end
+
+CommandResult --> ListCommand : result
+ListCommand --> App : result
+App -> Ui : show(result.getMessage())
+Ui --> User : display student list
+@enduml

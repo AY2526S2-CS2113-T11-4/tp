@@ -1,0 +1,38 @@
+@startuml AddCommandSequence
+skinparam style strictuml
+actor User
+
+User -> App : enter "add 1 CS2113/A"
+App -> Parser : parse(input)
+Parser -> Parser : parseAdd("1 CS2113/A")
+Parser -> Parser : validateModuleCode("CS2113")
+Parser -> Parser : validateGrade("A")
+Parser -> AddCommand : new AddCommand(1, "CS2113", A, null)
+AddCommand --> Parser : addCommand
+Parser --> App : addCommand
+App -> AddCommand : execute(db, storage)
+
+alt invalid index
+    AddCommand -> CommandResult : new CommandResult("Invalid student index")
+    CommandResult --> App : result
+else valid index
+    AddCommand -> StudentDatabase : getStudent(0)
+    StudentDatabase --> AddCommand : student
+
+    alt credits provided
+        AddCommand -> Module : new Module("CS2113", A, credits)
+    else default credits
+        AddCommand -> Module : new Module("CS2113", A)
+    end
+
+    Module --> AddCommand : module
+    AddCommand -> Student : addModule(module)
+    AddCommand -> Storage : saveStudentList(db)
+    AddCommand -> CommandResult : new CommandResult("Added module CS2113 (A) to Alice")
+    CommandResult --> AddCommand : result
+    AddCommand --> App : result
+end
+
+App -> Ui : show(result.getMessage())
+Ui --> User : display confirmation
+@enduml

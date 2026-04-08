@@ -1,0 +1,65 @@
+@startuml AppClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class App {
+    -parser: Parser
+    -db: StudentDatabase
+    -ui: Ui
+    -storage: Storage
+    -history: CommandHistory
+    +App(Ui, Parser, StudentDatabase, Storage)
+    +run(): void
+}
+
+class Parser {
+    +parse(String): Command
+}
+
+class StudentDatabase {
+    +addStudent(Student): void
+    +getStudent(int): Student
+    +removeStudent(int): Student
+    +getStudentCount(): int
+    +getAllStudents(): List<Student>
+}
+
+class Ui {
+    +readCommand(): String
+    +show(String): void
+    +line(): void
+}
+
+class Storage {
+    +saveStudentList(StudentDatabase): void
+    +loadStudentList(): List<Student>
+}
+
+class CommandHistory {
+    +push(Command): void
+    +pop(): Command
+}
+
+interface Command {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class CommandResult {
+    -message: String
+    -exit: boolean
+    +CommandResult(String, boolean)
+    +getMessage(): String
+    +shouldExit(): boolean
+}
+
+App --> Parser : uses
+App --> StudentDatabase : uses
+App --> Ui : uses
+App --> Storage : uses
+App --> CommandHistory : uses
+App ..> Command : calls execute()
+App ..> CommandResult : reads
+Parser ..> Command : creates
+@enduml

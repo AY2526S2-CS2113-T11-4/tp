@@ -1,0 +1,31 @@
+@startuml CommandResultClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+interface Command {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class CommandResult {
+    -message: String
+    -exit: boolean
+    +CommandResult(String)
+    +CommandResult(String, boolean)
+    +getMessage(): String
+    +shouldExit(): boolean
+}
+
+class App {
+    +run(): void
+}
+
+class Ui {
+    +show(String): void
+}
+
+Command ..> CommandResult : creates
+App ..> CommandResult : reads
+App --> Ui : uses
+@enduml

@@ -1,0 +1,21 @@
+@startuml ArgumentTokenizerClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class ArgumentTokenizer {
+    -tokenMap: Map<String, String>
+    +ArgumentTokenizer(String, String...)
+    +getValue(String): String
+}
+
+class Parser {
+    +parse(String): Command
+}
+
+class ParseException {
+    +ParseException(String)
+}
+
+Parser --> ArgumentTokenizer : uses
+ArgumentTokenizer ..> ParseException : throws
+@enduml

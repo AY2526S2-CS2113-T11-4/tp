@@ -1,0 +1,54 @@
+@startuml GradeClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+enum Grade <<enum>>{
+    A_PLUS
+    A
+    A_MINUS
+    B_PLUS
+    B
+    B_MINUS
+    C_PLUS
+    C
+    D_PLUS
+    D
+    F
+    SATISFACTORY
+    UNSATISFACTORY
+    COMPLETED_SATISFACTORY
+    COMPLETED_UNSATISFACTORY
+    INCOMPLETE
+    IN_PROGRESS
+    AUDIT
+    EXEMPTED
+    WITHDRAWN
+    WITHDRAWAL_FROM_UNIVERSITY
+    DISTINCTION
+    MERIT
+    PASS
+    FAIL
+    -label: String
+    -cap: double
+    -countsToGpa: boolean
+    -countsToCompletion: boolean
+    +getCap(): double
+    +getCountsToGpa(): boolean
+    +getCountsToCompletion(): boolean
+    +fromString(String): Grade
+    +toString(): String
+}
+
+class Module {
+    -grade: Grade
+    +getGrade(): Grade
+}
+
+class Student {
+    +calculateCap(): double
+    +getTotalMCs(): int
+}
+
+Module --> Grade : uses
+Student --> Module : aggregates
+@enduml

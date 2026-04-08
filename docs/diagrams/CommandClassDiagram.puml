@@ -1,0 +1,48 @@
+@startuml CommandClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+interface Command {
+    +execute(StudentDatabase): CommandResult
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class CreateCommand {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class DeleteCommand {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class ListCommand {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class AddCommand {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class RemoveCommand {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+Command <|.. CreateCommand
+Command <|.. DeleteCommand
+Command <|.. ListCommand
+Command <|.. AddCommand
+Command <|.. RemoveCommand
+@enduml

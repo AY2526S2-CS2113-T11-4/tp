@@ -1,0 +1,18 @@
+@startuml UiClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class Ui {
+    -{static} line: String
+    -scanner: Scanner
+    +{static} line(): void
+    +readCommand(): String
+    +{static} show(String): void
+}
+
+class App {
+    +run(): void
+}
+
+App --> Ui : uses
+@enduml

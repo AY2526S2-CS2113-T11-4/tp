@@ -1,0 +1,45 @@
+@startuml ParserClassDiagram
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class Parser {
+    -history: CommandHistory
+    +setCommandHistory(CommandHistory): void
+    +parse(String): Command
+    -parseCreate(String): Command
+    -parseDelete(String): Command
+    -parseAdd(String): Command
+    -parseRemove(String): Command
+    -parseStatus(String): Command
+    -parseEdit(String): Command
+    -parseSearch(String): Command
+    -parseSort(String): Command
+    -parseFind(String): Command
+    -parseUndo(): Command
+    -validateName(String): String
+    -validatePhone(String): String
+    -validateEmail(String): String
+    -validateAddress(String): String
+    -validateModuleCode(String): String
+    -validateGrade(String): Grade
+}
+
+class ArgumentTokenizer {
+    +ArgumentTokenizer(String, String...)
+    +getValue(String): String
+}
+
+interface Command {
+    +execute(StudentDatabase, Storage): CommandResult
+    +undo(StudentDatabase, Storage): CommandResult
+    +isUndoable(): boolean
+}
+
+class ParseException {
+    +ParseException(String)
+}
+
+Parser --> ArgumentTokenizer : uses
+Parser ..> Command : creates
+Parser ..> ParseException : throws
+@enduml
