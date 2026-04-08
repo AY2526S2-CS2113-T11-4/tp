@@ -1,0 +1,94 @@
+@startuml EditCommand
+
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+interface Command <<interface>> {
+  + execute(db: StudentDatabase, storage: Storage): CommandResult
+  + undo(db: StudentDatabase, storage: Storage): CommandResult
+  + isUndoable(): boolean
+}
+
+class EditCommand {
+  - index: int
+  - name: String
+  - phone: String
+  - email: String
+  - address: String
+  - course: String
+  - moduleCode: String
+  - grade: Grade
+  - previousStudent: Student
+  + execute(db: StudentDatabase, storage: Storage): CommandResult
+  + undo(db: StudentDatabase, storage: Storage): CommandResult
+  + isUndoable(): boolean
+}
+
+class StudentDatabase {
+  - studentList: List<Student>
+  + getStudent(index: int): Student
+  + updateStudent(index: int, student: Student): void
+  + getStudentCount(): int
+}
+
+class Student {
+  - name: String
+  - phone: String
+  - email: String
+  - address: String
+  - course: String
+  + getModules(): List<Module>
+  + addModule(module: Module): void
+}
+
+class "Student.Builder" as StudentBuilder {
+  + Builder(existing: Student)
+  + name(name: String): Builder
+  + phone(phone: String): Builder
+  + email(email: String): Builder
+  + address(address: String): Builder
+  + course(course: String): Builder
+  + build(): Student
+}
+
+class Module {
+  - code: String
+  - grade: Grade
+  + getCode(): String
+  + getGrade(): Grade
+}
+
+enum Grade <<enum>> {
+  A_PLUS
+  A
+  A_MINUS
+  B_PLUS
+  B
+  B_MINUS
+  C
+  F
+  + getCap(): double
+  + fromString(input: String): Grade
+}
+
+class Storage {
+  + saveStudentList(db: StudentDatabase): void
+}
+
+class CommandResult {
+  - message: String
+  - shouldExit: boolean
+}
+
+EditCommand ..|> Command
+EditCommand ..> StudentDatabase : uses
+EditCommand ..> Storage : uses
+EditCommand ..> CommandResult : creates
+EditCommand ..> StudentBuilder : uses
+EditCommand ..> Student : previousStudent
+StudentBuilder ..> Student : creates
+StudentDatabase "1" o-- "0..*" Student : aggregates
+Student "1" o-- "0..*" Module : aggregates
+Module --> Grade : uses
+
+@enduml

@@ -1,16 +1,33 @@
-@startuml
-skinparam maxMessageSize 150
+@startuml EditCommand_Sequence
 
-participant Caller
-participant "cmd:EditCommand" as EditCommand
-participant "db:StudentDatabase" as StudentDatabase
-participant ":Storage" as Storage
+skinparam style strictuml
+
+actor User
+participant ":App" as App
+participant ":Parser" as Parser
+participant ":EditCommand" as EditCommand
+participant ":StudentDatabase" as StudentDatabase
 participant ":Student" as Student
-participant "updatedStudent:Student" as UpdatedStudent
+participant "Student.Builder:Builder" as StudentBuilder
+participant ":Module" as Module
+participant ":Storage" as Storage
+participant ":CommandResult" as CommandResult
 
-title EditCommand - Sequence Diagram
+User -> App : input "edit <index> [fields]"
+activate App
 
-Caller -> EditCommand : execute(db, storage)
+App -> Parser : parse(input)
+activate Parser
+
+Parser -> EditCommand : new EditCommand(index, name, phone,\nemail, address, course, moduleCode, grade)
+activate EditCommand
+EditCommand --> Parser : editCommand
+deactivate EditCommand
+
+Parser --> App : editCommand
+deactivate Parser
+
+App -> EditCommand : execute(db, storage)
 activate EditCommand
 
 EditCommand -> StudentDatabase : getStudentCount()
@@ -18,72 +35,94 @@ activate StudentDatabase
 StudentDatabase --> EditCommand : studentCount
 deactivate StudentDatabase
 
-alt index > studentCount || index < 0
-    EditCommand --> Caller : throws CommandException
-end
+alt index out of range
+  EditCommand -> CommandResult : new CommandResult("Index should be within range.")
+  activate CommandResult
+  CommandResult --> EditCommand : result
+  deactivate CommandResult
 
-EditCommand -> StudentDatabase : getStudent(index)
-activate StudentDatabase
-StudentDatabase --> EditCommand : existing
-deactivate StudentDatabase
+  EditCommand --> App : result
+else index valid
+  EditCommand -> StudentDatabase : getStudent(index)
+  activate StudentDatabase
+  StudentDatabase --> EditCommand : existing (Student)
+  deactivate StudentDatabase
 
-opt moduleCode != null
+
+
+  opt moduleCode != null
     EditCommand -> Student : getModules()
     activate Student
-    Student --> EditCommand : modules
+    Student --> EditCommand : List<Module>
     deactivate Student
 
-    alt noneMatch(m.getCode() == moduleCode)
-        create "result:CommandResult" as CommandResult1
-        EditCommand -> CommandResult1 : new("Module not found...")
-        activate CommandResult1
-        CommandResult1 --> EditCommand : result
-        deactivate CommandResult1
-        EditCommand --> Caller : result
+    EditCommand -> EditCommand : check moduleCode exists in list
+    activate EditCommand
+
+    opt module not found
+      EditCommand -> CommandResult : new CommandResult("Module not found.")
+      activate CommandResult
+      CommandResult --> EditCommand : result
+      deactivate CommandResult
+
+      EditCommand --> App : result
     end
-end
+    deactivate EditCommand
+  end
 
-create UpdatedStudent
-EditCommand -> UpdatedStudent : new Student.Builder(existing)\n.build()
-activate UpdatedStudent
-UpdatedStudent --> EditCommand : updatedStudent
-deactivate UpdatedStudent
+  EditCommand -> StudentBuilder : new Builder(existing)
+  activate StudentBuilder
 
-EditCommand -> Student : getModules()
-activate Student
-Student --> EditCommand : modules
-deactivate Student
+  EditCommand -> StudentBuilder : name(name)
+  EditCommand -> StudentBuilder : phone(phone)
+  EditCommand -> StudentBuilder : email(email)
+  EditCommand -> StudentBuilder : address(address)
+  EditCommand -> StudentBuilder : course(course)
+  EditCommand -> StudentBuilder : build()
 
-loop for each Module m in existing.getModules()
-    alt moduleCode != null && m.getCode() == moduleCode
-        EditCommand -> UpdatedStudent : addModule(new Module(m.getCode(), grade))
-        activate UpdatedStudent
-        UpdatedStudent --> EditCommand
-        deactivate UpdatedStudent
+  StudentBuilder -> Student : new Student(builder)
+  activate Student
+  Student --> StudentBuilder : updatedStudent
+  deactivate Student
+
+  StudentBuilder --> EditCommand : updatedStudent
+  deactivate StudentBuilder
+
+  loop for each Module in existing.getModules()
+    alt moduleCode matches module code
+      EditCommand -> Module : new Module(code, newGrade)
+      activate Module
+      Module --> EditCommand : updatedModule
+      deactivate Module
+
+      EditCommand -> Student : addModule(updatedModule)
+      activate Student
+      Student --> EditCommand
+      deactivate Student
     else
-        EditCommand -> UpdatedStudent : addModule(m)
-        activate UpdatedStudent
-        UpdatedStudent --> EditCommand
-        deactivate UpdatedStudent
+      EditCommand -> Student : addModule(existingModule)
+      activate Student
+      Student --> EditCommand
+      deactivate Student
     end
+  end
+
+  EditCommand -> StudentDatabase : updateStudent(index, updatedStudent)
+  activate StudentDatabase
+  StudentDatabase --> EditCommand
+  deactivate StudentDatabase
+
+  EditCommand -> Storage : saveStudentList(db)
+  activate Storage
+  Storage --> EditCommand
+  deactivate Storage
+
+  EditCommand -> CommandResult : new CommandResult("Student updated successfully.")
+  activate CommandResult
+  CommandResult --> EditCommand : result
+  deactivate CommandResult
+
+  EditCommand --> App : result
 end
-
-EditCommand -> StudentDatabase : updateStudent(index, updatedStudent)
-activate StudentDatabase
-StudentDatabase --> EditCommand
-deactivate StudentDatabase
-
-EditCommand -> Storage : saveStudentList(db)
-activate Storage
-Storage --> EditCommand
-deactivate Storage
-
-create "result:CommandResult" as CommandResult2
-EditCommand -> CommandResult2 : new("Student updated successfully.")
-activate CommandResult2
-CommandResult2 --> EditCommand : result
-deactivate CommandResult2
-
-EditCommand --> Caller : result
 deactivate EditCommand
 @enduml

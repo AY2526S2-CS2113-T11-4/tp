@@ -1,0 +1,53 @@
+@startuml FindCommand
+
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+interface Command <<interface>>{
+  + execute(db: StudentDatabase, storage: Storage): CommandResult
+  + undo(db: StudentDatabase, storage: Storage): CommandResult
+  + isUndoable(): boolean
+}
+
+class FindCommand {
+  - substring: String
+  + execute(db: StudentDatabase, storage: Storage): CommandResult
+  + undo(db: StudentDatabase, storage: Storage): CommandResult
+  + isUndoable(): boolean
+  - matchesSubstring(student: Student, substring: String): boolean
+}
+
+class StudentDatabase {
+  - studentList: List<Student>
+  + getAllStudents(): List<Student>
+  + getStudentCount(): int
+}
+
+class Student {
+  - name: String
+  - phone: String
+  - email: String
+  - address: String
+  - course: String
+  + getName(): String
+  + getCourse(): String
+}
+
+class Storage {
+  + saveStudentList(db: StudentDatabase): void
+  + loadStudentList(): ArrayList<Student>
+}
+
+class CommandResult {
+  - message: String
+  - shouldExit: boolean
+}
+
+FindCommand ..|> Command
+FindCommand ..> StudentDatabase : uses
+FindCommand ..> Student : uses
+FindCommand ..> Storage : uses
+FindCommand ..> CommandResult : creates
+StudentDatabase "1" o-- "0..*" Student : contains
+
+@enduml
