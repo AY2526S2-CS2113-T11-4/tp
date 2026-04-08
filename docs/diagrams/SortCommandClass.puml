@@ -1,5 +1,7 @@
 @startuml
 skinparam classAttributeIconSize 0
+skinparam style strictuml
+
 
 interface Command {
     + execute(db: StudentDatabase, storage: Storage): CommandResult

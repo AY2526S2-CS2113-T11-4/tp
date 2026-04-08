@@ -1,4 +1,7 @@
 @startuml
+
+skinparam style strictuml
+
 actor User
 participant ":SearchCommand" as SC
 participant "db:StudentDatabase" as DB

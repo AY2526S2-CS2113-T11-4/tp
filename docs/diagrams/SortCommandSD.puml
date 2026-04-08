@@ -1,4 +1,8 @@
 @startuml
+
+skinparam style strictuml
+
+
 actor User
 participant ":SortCommand" as SC
 participant "db:StudentDatabase" as DB
