@@ -54,13 +54,30 @@ Improved robustness against badly formed inputs by throwing an exception when
 
 ### Contributions to the User Guide
 - Wrote the descriptions and examples to the following functions: ```create, delete, edit, list, find, search, status, undo, sort, exit, add, remove```
-- Added Command Format Notes
+- Wrote Command Format Notes
 - Added some examples to Command Summary
 
 ### Contributions to the Developer Guide
-- Design and implementation of:
-  - Parser
-  - App
+- Design: 
+  - Main
+  - Config
+  - Exceptions: CommandException/ParseException
+  - Model: Student/StudentDatabase, Grade/Module
+  - Ui
+  - Parser/ArgumentTokenizer
+  - Storage
+  - Command
+- Implementation:
+  - AddCommand
+  - RemoveCommand
+  - CreateCommand
+  - DeleteCommand
+  - ListCommand
+
+Created the write-ups and diagrams for the above listed items.
 
 ### Contributions to team-based tasks
-Caught bugs for other team members, reminded team members on deadlines, suggested new features
+- Caught bugs for other team members
+- Reminded team members on deadlines 
+- Suggested new features
+- Approve PRs
