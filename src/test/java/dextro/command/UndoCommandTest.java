@@ -160,16 +160,7 @@ class UndoCommandTest {
         assertTrue(history.isEmpty());
     }
 
-    @Test
-    void execute_undoNonUndoableCommand_throwsException() {
-        StatusCommand statusCmd = new StatusCommand(1);
-        history.push(statusCmd);
-
-        UndoCommand undoCmd = new UndoCommand(history);
-        assertThrows(CommandException.class, () ->
-            undoCmd.execute(db, storage)
-        );
-    }
+    // Removed test for undoing non-undoable command as CommandHistory asserts prevent non-undoable commands
 
     @Test
     void execute_consecutiveUndoOnEmptyHistory_returnsWarningEachTime() throws CommandException {

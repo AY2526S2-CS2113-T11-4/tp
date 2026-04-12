@@ -100,17 +100,7 @@ class CommandHistoryTest {
         assertNull(history.pop());
     }
 
-    @Test
-    void push_nullCommand_commandStored() {
-        history.push(null);
-        assertFalse(history.isEmpty());
-    }
-
-    @Test
-    void pop_afterPushingNull_returnsNull() {
-        history.push(null);
-        assertNull(history.pop());
-    }
+    // Removed tests for pushing null commands as CommandHistory asserts prevent null commands
 
     @Test
     void pushAndPop_alternating_maintainsCorrectState() {

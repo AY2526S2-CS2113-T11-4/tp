@@ -72,14 +72,19 @@ public class Student {
     }
 
     public double calculateCap() {
+        assert modules != null : "Modules list should not be null";
+
         double totalPoints = 0.0;
         int totalCredits = 0;
 
         for (Module module : modules) {
+            assert module != null : "Module should not be null";
             Grade grade = module.getGrade();
+            assert grade != null : "Grade should not be null";
 
             if (grade.getCountsToGpa()) {
                 int credits = module.getCredits();
+                assert credits >= 0 : "Credits should not be negative";
                 totalPoints += grade.getCap() * credits;
                 totalCredits += credits;
             }
@@ -89,34 +94,50 @@ public class Student {
             return 0.0;
         }
 
-        return totalPoints / totalCredits;
+        double cap = totalPoints / totalCredits;
+        assert cap >= 0.0 && cap <= 5.0 : "Calculated CAP should be between 0.0 and 5.0";
+        return cap;
     }
 
     public int getTotalMCs() {
+        assert modules != null : "Modules list should not be null";
+
         int total = 0;
 
         for (Module module : modules) {
+            assert module != null : "Module should not be null";
+            assert module.getGrade() != null : "Module grade should not be null";
+
             if (module.getGrade().getCountsToCompletion()) {
-                total += module.getCredits();
+                int credits = module.getCredits();
+                assert credits >= 0 : "Credits should not be negative";
+                total += credits;
             }
         }
 
+        assert total >= 0 : "Total MCs should not be negative";
         return total;
     }
 
     public String getProgressStatus() {
         int totalMCs = getTotalMCs();
+        assert totalMCs >= 0 : "Total MCs should not be negative";
+
+        String status;
         if (totalMCs >= 160) {
-            return "Completed";
+            status = "Completed";
         } else if (totalMCs >= 120) {
-            return "Good Progress";
+            status = "Good Progress";
         } else if (totalMCs >= 80) {
-            return "Satisfactory";
+            status = "Satisfactory";
         } else if (totalMCs >= 40) {
-            return "On Track";
+            status = "On Track";
         } else {
-            return "Just Started";
+            status = "Just Started";
         }
+
+        assert status != null && !status.isEmpty() : "Status should not be null or empty";
+        return status;
     }
 
     // Builder class
