@@ -137,6 +137,16 @@ Here are the matching students in your list:
 1. John/87654321/N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 ```
+```
+> find n.a
+----------------------------------------------------------------------------------------------------
+Here are the matching students in your list:
+1. JOHN/N.A./N.A./N.A./N.A.
+2. janny/N.A./janny@gmail.com/N.A./N.A.
+3. John doe/91234678/email@gmail.com/bukit batok/N.A.
+----------------------------------------------------------------------------------------------------
+```
+User can use command: find n.a to query all records of null/missing value for manual validation or filtering if required.
 ---
 
 ### `search`
