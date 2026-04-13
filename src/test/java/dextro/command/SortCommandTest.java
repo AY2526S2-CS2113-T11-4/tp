@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+
 public class SortCommandTest {
 
     private StudentDatabase db;
@@ -43,6 +44,7 @@ public class SortCommandTest {
                 .build();
 
         // Add students out of alphabetical order
+        // Original indices: Bob = 1, Charlie = 2, Alice = 3
         db.addStudent(bob);
         db.addStudent(charlie);
         db.addStudent(alice);
@@ -57,10 +59,11 @@ public class SortCommandTest {
         CommandResult result = sortCommand.execute(db, storage);
 
         // Assert
+        // Expecting original database indices: Alice is 3, Bob is 1, Charlie is 2
         String expectedMessage = "Temporary list sorted by name:\n" +
-                "1. Alice/N.A./N.A./N.A./CS\n" +
-                "2. Bob/N.A./N.A./N.A./SE\n" +
-                "3. Charlie/N.A./N.A./N.A./IS";
+                "3. Alice/N.A./N.A./N.A./CS\n" +
+                "1. Bob/N.A./N.A./N.A./SE\n" +
+                "2. Charlie/N.A./N.A./N.A./IS";
 
         assertEquals(expectedMessage, result.getMessage());
     }
@@ -74,10 +77,11 @@ public class SortCommandTest {
         CommandResult result = sortCommand.execute(db, storage);
 
         // Assert
+        // Expecting original database indices: Alice is 3, Charlie is 2, Bob is 1
         String expectedMessage = "Temporary list sorted by course:\n" +
-                "1. Alice/N.A./N.A./N.A./CS\n" +
+                "3. Alice/N.A./N.A./N.A./CS\n" +
                 "2. Charlie/N.A./N.A./N.A./IS\n" +
-                "3. Bob/N.A./N.A./N.A./SE";
+                "1. Bob/N.A./N.A./N.A./SE";
 
         assertEquals(expectedMessage, result.getMessage());
     }

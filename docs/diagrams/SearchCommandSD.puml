@@ -1,68 +1,68 @@
 @startuml
-
+skinparam maxMessageSize 150
 skinparam style strictuml
+autonumber
 
-actor User
-participant ":SearchCommand" as SC
-participant "db:StudentDatabase" as DB
-participant "student:Student" as S
-participant "m:Module" as M
+actor Caller
+participant "cmd:SearchCommand" as SearchCommand
+participant "db:StudentDatabase" as StudentDatabase
+participant "student:Student" as Student
+participant "m:Module" as Module
 
-User -> SC : execute(db, storage)
-activate SC
+Caller -> SearchCommand : execute(db, storage)
+activate SearchCommand
 
-SC -> DB : getAllStudents()
-activate DB
-DB --> SC : List<Student> students
-deactivate DB
+SearchCommand -> StudentDatabase : getAllStudents()
+activate StudentDatabase
+StudentDatabase --> SearchCommand : List<Student>
+deactivate StudentDatabase
 
-loop for each student in students
-    alt course != null
-        SC -> S : getCourse()
-        activate S
-        S --> SC : courseName
-        deactivate S
+loop for each student in List<Student>
+    SearchCommand -> SearchCommand : isStudentMatch(student)
+    activate SearchCommand
 
-        opt courseName contains search string
-            SC -> S : getName()
-            activate S
-            S --> SC : name
-            deactivate S
+    ' Fetch basic attributes for matching
+    SearchCommand -> Student : getName(), getCourse(), etc.
+    activate Student
+    Student --> SearchCommand : field values
+    deactivate Student
+
+    ' Module matching logic (only executed if user searched by moduleCode)
+    opt if this.moduleCode != null
+        SearchCommand -> SearchCommand : getMatchingModulesString(student)
+        activate SearchCommand
+
+        SearchCommand -> Student : getModules()
+        activate Student
+        Student --> SearchCommand : List<Module>
+        deactivate Student
+
+        loop for each m in List<Module>
+            SearchCommand -> Module : getCode(), getGrade()
+            activate Module
+            Module --> SearchCommand : code, grade
+            deactivate Module
         end
 
-    else moduleCode != null
-        SC -> S : getModules()
-        activate S
-        S --> SC : List<Module>
-        deactivate S
+        SearchCommand --> SearchCommand : matched modules string (or null)
+        deactivate SearchCommand
+    end
 
-        loop for each module in student
-            SC -> M : getCode()
-            activate M
-            M --> SC : code
-            deactivate M
+    SearchCommand --> SearchCommand : boolean (isMatch)
+    deactivate SearchCommand
 
-            opt code contains moduleCode
-                SC -> S : getName()
-                activate S
-                S --> SC : name
-                deactivate S
-
-                SC -> M : getGrade()
-                activate M
-                M --> SC : grade
-                deactivate M
-            end
-        end
+    ' Formatting logic (only executed if student is a valid match)
+    opt if isMatch == true
+        SearchCommand -> SearchCommand : formatStudentDetails(index, student)
+        activate SearchCommand
+        SearchCommand --> SearchCommand : formatted string appended to resultBuilder
+        deactivate SearchCommand
     end
 end
 
-create participant "result:CommandResult" as CR
-SC -> CR : new CommandResult(feedback, false)
-activate CR
-CR --> SC
-deactivate CR
+create "result:CommandResult" as CommandResult
+SearchCommand -> CommandResult : new CommandResult(finalString)
 
-SC --> User : result
-deactivate SC
+SearchCommand --> Caller : result
+deactivate SearchCommand
 @enduml

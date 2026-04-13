@@ -1915,76 +1915,76 @@ Here are the matching students in your list:
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-2. Robert, Computer Science
-7. Alice, Computer Science
+2. Robert, Course: Computer Science
+7. Alice, Course: Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-2. Robert, Computer Science
-7. Alice, Computer Science
+2. Robert, Course: Computer Science
+7. Alice, Course: Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1. Alice Updated, CS2113: A
+1. Alice Updated, Modules: [CS2113: A]
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1. Alice Updated, CS2113: A
+1. Alice Updated, Modules: [CS2113: A]
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Error: Cannot search by both course and module at the same time.
+No matching students found.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Error: I'm sorry, I think you meant to use the find function? The search function only works if you input a valid prefix (e.g., c/CS or m/CS2113).
+Error: I'm sorry, I think you meant to use the find function? The search function only works if you input a valid prefix (e.g., n/John, p/8123, e/nus, a/clementi, c/CS, m/CS2113).
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Search query cannot be empty.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Error: Course search query cannot be empty.
+Error: Search query cannot be empty.The search function only works if you input a valid prefix(e.g., n/John, p/8123, e/nus, a/clementi, c/CS, m/CS2113).
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Error: Module search query cannot be empty.
+Error: Search query cannot be empty.The search function only works if you input a valid prefix(e.g., n/John, p/8123, e/nus, a/clementi, c/CS, m/CS2113).
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-2. Robert, Computer Science
-7. Alice, Computer Science
+2. Robert, Course: Computer Science
+7. Alice, Course: Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by name:
-1. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-2. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-3. Alice Updated/N.A./N.A./N.A./N.A.
-4. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-5. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
-7. Eve/90000002/eve@mail.com/Sheares/Mathematics
-8. John Doe/N.A./N.A./N.A./N.A.
-9. NewBob/98765432/N.A./N.A./N.A.
-10. NewDiana/82345678/N.A./UTown/N.A.
-11. O'Brien-Smith/N.A./N.A./N.A./N.A.
-12. Robert/91111111/N.A./N.A./Computer Science
-13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+1. Alice Updated/N.A./N.A./N.A./N.A.
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics
+6. John Doe/N.A./N.A./N.A./N.A.
+12. NewBob/98765432/N.A./N.A./N.A.
+13. NewDiana/82345678/N.A./UTown/N.A.
+3. O'Brien-Smith/N.A./N.A./N.A./N.A.
+2. Robert/91111111/N.A./N.A./Computer Science
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by course:
-1. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-2. Diana/90000001/diana@mail.com/UTown/Computer Engineering
-3. Robert/91111111/N.A./N.A./Computer Science
-4. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-5. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-6. Eve/90000002/eve@mail.com/Sheares/Mathematics
-7. Alice Updated/N.A./N.A./N.A./N.A.
-8. O'Brien-Smith/N.A./N.A./N.A./N.A.
-9. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-10. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-11. John Doe/N.A./N.A./N.A./N.A.
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+2. Robert/91111111/N.A./N.A./Computer Science
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics
+1. Alice Updated/N.A./N.A./N.A./N.A.
+3. O'Brien-Smith/N.A./N.A./N.A./N.A.
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6. John Doe/N.A./N.A./N.A./N.A.
 12. NewBob/98765432/N.A./N.A./N.A.
 13. NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by cap:
-1. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
-2. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
-3. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
-4. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
+3. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
+1. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
+2. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 0.0)
 6. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
@@ -1997,9 +1997,9 @@ Temporary list sorted by cap:
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by mcs:
-1. O'Brien-Smith/N.A./N.A./N.A./N.A. (MCs: 24)
-2. Alice Updated/N.A./N.A./N.A./N.A. (MCs: 16)
-3. Robert/91111111/N.A./N.A./Computer Science (MCs: 5)
+3. O'Brien-Smith/N.A./N.A./N.A./N.A. (MCs: 24)
+1. Alice Updated/N.A./N.A./N.A./N.A. (MCs: 16)
+2. Robert/91111111/N.A./N.A./Computer Science (MCs: 5)
 4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (MCs: 4)
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (MCs: 4)
 6. John Doe/N.A./N.A./N.A./N.A. (MCs: 0)
@@ -2016,26 +2016,26 @@ Error: Invalid category. Available categories: name, course, cap, mcs
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by name:
-1. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-2. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-3. Alice Updated/N.A./N.A./N.A./N.A.
-4. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-5. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
-7. Eve/90000002/eve@mail.com/Sheares/Mathematics
-8. John Doe/N.A./N.A./N.A./N.A.
-9. NewBob/98765432/N.A./N.A./N.A.
-10. NewDiana/82345678/N.A./UTown/N.A.
-11. O'Brien-Smith/N.A./N.A./N.A./N.A.
-12. Robert/91111111/N.A./N.A./Computer Science
-13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+1. Alice Updated/N.A./N.A./N.A./N.A.
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics
+6. John Doe/N.A./N.A./N.A./N.A.
+12. NewBob/98765432/N.A./N.A./N.A.
+13. NewDiana/82345678/N.A./UTown/N.A.
+3. O'Brien-Smith/N.A./N.A./N.A./N.A.
+2. Robert/91111111/N.A./N.A./Computer Science
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by cap:
-1. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
-2. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
-3. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
-4. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
+3. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
+1. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
+2. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 0.0)
 6. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
@@ -2172,19 +2172,19 @@ Undone: Student edit of Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by name:
-1. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-2. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-3. Alice Updated/N.A./N.A./N.A./N.A.
-4. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-5. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
-7. Eve/90000002/eve@mail.com/Sheares/Mathematics
-8. John/91234567/a@b.com/N.A./N.A.
-9. John Doe/N.A./N.A./N.A./N.A.
-10. NewBob/98765432/N.A./N.A./N.A.
-11. NewDiana/82345678/N.A./UTown/N.A.
-12. O'Brien-Smith/N.A./N.A./N.A./N.A.
-13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+1. Alice Updated/N.A./N.A./N.A./N.A.
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics
+2. John/91234567/a@b.com/N.A./N.A.
+6. John Doe/N.A./N.A./N.A./N.A.
+12. NewBob/98765432/N.A./N.A./N.A.
+13. NewDiana/82345678/N.A./UTown/N.A.
+3. O'Brien-Smith/N.A./N.A./N.A./N.A.
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Undone: Student edit of Alice Updated

@@ -31,6 +31,10 @@ public class Parser {
             throw new ParseException("Input cannot be empty");
         }
 
+        if (userInput.contains("|")) {
+            throw new ParseException("Input cannot contain the '|' character.");
+        }
+
         String[] split = userInput.trim().split("\\s+", 2);
         String commandWord = split[0].toLowerCase();
         String arguments = split.length > 1 ? split[1].trim() : "";
@@ -227,28 +231,65 @@ public class Parser {
             throw new ParseException("Search query cannot be empty.");
         }
 
-        ArgumentTokenizer tokenizer = new ArgumentTokenizer(args, "c/", "m/");
+        ArgumentTokenizer tokenizer = new ArgumentTokenizer(args, "n/", "p/", "e/", "a/", "c/", "m/");
+        String name = tokenizer.getValue("n/");
+        String phone = tokenizer.getValue("p/");
+        String email = tokenizer.getValue("e/");
+        String address = tokenizer.getValue("a/");
         String course = tokenizer.getValue("c/");
         String module = tokenizer.getValue("m/");
 
-        if (course != null && module != null) {
-            throw new ParseException("Cannot search by both course and module at the same time.");
+        // Count how many categories the user is trying to search by
+        int count = 0;
+        if (name != null) {
+            count++;
+        }
+        if (phone != null) {
+            count++;
+        }
+        if (email != null) {
+            count++;
+        }
+        if (address != null) {
+            count++;
+        }
+        if (course != null) {
+            count++;
+        }
+        if (module != null) {
+            count++;
         }
 
-        if (course != null) {
-            if (course.isBlank()) {
-                throw new ParseException("Course search query cannot be empty.");
-            }
-            return new SearchCommand(course.strip(), null);
-        } else if (module != null) {
-            if (module.isBlank()) {
-                throw new ParseException("Module search query cannot be empty.");
-            }
-            return new SearchCommand(null, module.strip());
-        } else {
+        /*if (count > 1) {
+            throw new ParseException("Cannot search by multiple categories at the same time.");
+        }*/
+
+        if (count == 0) {
             throw new ParseException("I'm sorry, I think you meant to use the find function? " +
-                    "The search function only works if you input a valid prefix (e.g., c/CS or m/CS2113).");
+                    "The search function only works if you input a valid prefix " +
+                    "(e.g., n/John, p/8123, e/nus, a/clementi, c/CS, m/CS2113).");
         }
+
+        // Prevent empty prefix searches like "search n/"
+        if ((name != null && name.isBlank()) ||
+            (phone != null && phone.isBlank()) ||
+            (email != null && email.isBlank()) ||
+            (address != null && address.isBlank()) ||
+            (course != null && course.isBlank()) ||
+            (module != null && module.isBlank())) {
+            throw new ParseException("Search query cannot be empty." +
+                    "The search function only works if you input a valid prefix" +
+                    "(e.g., n/John, p/8123, e/nus, a/clementi, c/CS, m/CS2113).");
+        }
+
+        return new SearchCommand(
+                name != null ? name.strip() : null,
+                phone != null ? phone.strip() : null,
+                email != null ? email.strip() : null,
+                address != null ? address.strip() : null,
+                course != null ? course.strip() : null,
+                module != null ? module.strip() : null
+        );
     }
 
     private Command parseSort(String args) throws ParseException {
