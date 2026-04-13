@@ -59,10 +59,9 @@ public class SortCommandTest {
         CommandResult result = sortCommand.execute(db, storage);
 
         // Assert
-        // Expecting original database indices: Alice is 3, Bob is 1, Charlie is 2
-        String expectedMessage = "Temporary list sorted by name:\n" +
-                "3. Alice/N.A./N.A./N.A./CS\n" +
-                "1. Bob/N.A./N.A./N.A./SE\n" +
+        String expectedMessage = "Temporary list sorted by name:" + System.lineSeparator() +
+                "3. Alice/N.A./N.A./N.A./CS" + System.lineSeparator() +
+                "1. Bob/N.A./N.A./N.A./SE" + System.lineSeparator() +
                 "2. Charlie/N.A./N.A./N.A./IS";
 
         assertEquals(expectedMessage, result.getMessage());
@@ -77,10 +76,9 @@ public class SortCommandTest {
         CommandResult result = sortCommand.execute(db, storage);
 
         // Assert
-        // Expecting original database indices: Alice is 3, Charlie is 2, Bob is 1
-        String expectedMessage = "Temporary list sorted by course:\n" +
-                "3. Alice/N.A./N.A./N.A./CS\n" +
-                "2. Charlie/N.A./N.A./N.A./IS\n" +
+        String expectedMessage = "Temporary list sorted by course:" + System.lineSeparator() +
+                "3. Alice/N.A./N.A./N.A./CS" + System.lineSeparator() +
+                "2. Charlie/N.A./N.A./N.A./IS" + System.lineSeparator() +
                 "1. Bob/N.A./N.A./N.A./SE";
 
         assertEquals(expectedMessage, result.getMessage());

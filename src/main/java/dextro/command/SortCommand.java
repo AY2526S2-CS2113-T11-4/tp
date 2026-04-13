@@ -48,7 +48,7 @@ public class SortCommand implements Command {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Temporary list sorted by ").append(category).append(":\n");
+        sb.append("Temporary list sorted by ").append(category).append(":").append(System.lineSeparator());
 
         for (Student student : sortedList) {
             // Retrieve the 1-based index from the original, unmutated list
@@ -64,7 +64,7 @@ public class SortCommand implements Command {
             } else if (category.equals("mcs")) {
                 sb.append(String.format(" (MCs: %d)", student.getTotalMCs()));
             }
-            sb.append("\n");
+            sb.append(System.lineSeparator());
         }
 
         return new CommandResult(sb.toString().trim(), false);

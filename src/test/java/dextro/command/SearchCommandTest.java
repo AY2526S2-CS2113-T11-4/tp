@@ -51,7 +51,7 @@ public class SearchCommandTest {
         SearchCommand command = new SearchCommand("John", null, null, null, null, null);
         CommandResult result = command.execute(db);
 
-        String expectedOutput = "1. John Doe\n" +
+        String expectedOutput = "1. John Doe" + System.lineSeparator() +
                 "3. Johnny Appleseed";
         assertEquals(expectedOutput, result.getMessage());
     }
@@ -92,7 +92,7 @@ public class SearchCommandTest {
         SearchCommand command = new SearchCommand(null, null, null, null, null, "CS2113");
         CommandResult result = command.execute(db);
 
-        String expectedOutput = "1. John Doe, Modules: [CS2113: A]\n" +
+        String expectedOutput = "1. John Doe, Modules: [CS2113: A]" + System.lineSeparator() +
                 "2. Jane Smith, Modules: [CS2113: B]";
 
         assertEquals(expectedOutput, result.getMessage());
@@ -108,7 +108,7 @@ public class SearchCommandTest {
         SearchCommand command = new SearchCommand(null, null, null, null, null, "CS");
         CommandResult result = command.execute(db);
 
-        String expectedOutput = "1. John Doe, Modules: [CS2113: A | CS2040: B+]\n" +
+        String expectedOutput = "1. John Doe, Modules: [CS2113: A | CS2040: B+]" + System.lineSeparator() +
                 "2. Jane Smith, Modules: [CS2113: B]";
         assertEquals(expectedOutput, result.getMessage());
     }

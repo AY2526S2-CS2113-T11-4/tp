@@ -148,7 +148,7 @@ public class SearchCommand implements Command {
             sb.append(", Modules: [").append(matchedModules).append("]");
         }
 
-        sb.append("\n");
+        sb.append(System.lineSeparator());
         return sb.toString();
     }
 
