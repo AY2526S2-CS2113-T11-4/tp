@@ -1417,7 +1417,7 @@ Student updated successfully.
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./alice.updated@mail.com/N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/N.A./N.A.
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1435,7 +1435,7 @@ Student updated successfully.
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./New Block 20/N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/N.A.
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1453,7 +1453,7 @@ Student updated successfully.
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./Information Systems
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1474,7 +1474,7 @@ Added module CS2113 (A) to Alice Updated
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1492,7 +1492,7 @@ Student updated successfully.
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1510,7 +1510,7 @@ Student updated successfully.
 Error: Phone number is not a valid Singapore mobile number
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1528,7 +1528,7 @@ Error: Phone number is not a valid Singapore mobile number
 Error: Invalid email format
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1546,7 +1546,7 @@ Error: Invalid email format
 Error: Module format must be CODE/GRADE[/CREDITS] (e.g., m/CS2113/A or m/CS2113/A/2)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1564,7 +1564,7 @@ Error: Module format must be CODE/GRADE[/CREDITS] (e.g., m/CS2113/A or m/CS2113/
 Error: Module format must be CODE/GRADE[/CREDITS] (e.g., m/CS2113/A or m/CS2113/A/2)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1582,7 +1582,7 @@ Error: Module format must be CODE/GRADE[/CREDITS] (e.g., m/CS2113/A or m/CS2113/
 Error: Invalid module code: INVALID
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1600,7 +1600,7 @@ Error: Invalid module code: INVALID
 Error: Edit requires at least one field (e.g., n/John or m/CS2113/A).
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1618,7 +1618,7 @@ Error: Edit requires at least one field (e.g., n/John or m/CS2113/A).
 Error: Index is compulsory for edit command
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1636,7 +1636,7 @@ Error: Index is compulsory for edit command
 Error: Invalid index to edit.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1654,7 +1654,7 @@ Error: Invalid index to edit.
 Error: Index should be within range.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1672,7 +1672,7 @@ Error: Index should be within range.
 Error: Index should be within range.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1690,7 +1690,7 @@ Error: Index should be within range.
 Error: Invalid formatting. Use prefixes: n/, p/, e/, a/, c/, m/. Example: edit 1 m/CS2113/A
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1708,7 +1708,7 @@ Error: Invalid formatting. Use prefixes: n/, p/, e/, a/, c/, m/. Example: edit 1
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1726,7 +1726,7 @@ Student updated successfully.
 Error: Credits must be positive
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1744,7 +1744,7 @@ Error: Credits must be positive
 Error: Credits must be positive
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1762,7 +1762,7 @@ Error: Credits must be positive
 Error: Invalid credits value: abc. Credits must be a positive integer.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 2: John/91234567/a@b.com/N.A./N.A.
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
@@ -1780,8 +1780,8 @@ Error: Invalid credits value: abc. Credits must be a positive integer.
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
-2: Robert/91111111/N.A./N.A./Computer Science
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2: Robert/91111111/a@b.com/N.A./Computer Science
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
@@ -1795,7 +1795,7 @@ Student updated successfully.
 13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Index 1: Alice Updated, N.A., Cap 4.8, 16/160 MCs completed. Status: Just Started.
+Index 1: Alice Updated, Information Systems, Cap 4.8, 16/160 MCs completed. Status: Just Started.
 Modules and Grades:
   - CG1111A: A+ (4 MCs)
   - CS2113: A (4 MCs)
@@ -1866,28 +1866,33 @@ Error: Invalid index for status: 99999999999999999
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
-1. Alice Updated/N.A./N.A./N.A./N.A.
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
-1. Alice Updated/N.A./N.A./N.A./N.A.
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-No matching students found.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-No matching students found.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-No matching students found.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-No matching students found.
+Here are the matching students in your list:
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Here are the matching students in your list:
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Here are the matching students in your list:
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Here are the matching students in your list:
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
@@ -1899,8 +1904,8 @@ Here are the matching students in your list:
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
-1. Alice Updated/N.A./N.A./N.A./N.A.
-2. Robert/91111111/N.A./N.A./Computer Science
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2. Robert/91111111/a@b.com/N.A./Computer Science
 3. O'Brien-Smith/N.A./N.A./N.A./N.A.
 4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
@@ -1915,6 +1920,8 @@ Here are the matching students in your list:
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
+1. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2. Robert/91111111/a@b.com/N.A./Computer Science
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
 9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
@@ -1929,7 +1936,7 @@ Error: Find query cannot be empty.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
-2. Robert/91111111/N.A./N.A./Computer Science
+2. Robert/91111111/a@b.com/N.A./Computer Science
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
@@ -1994,6 +2001,33 @@ Temporary list sorted by course:
 4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
 6. John Doe/N.A./N.A./N.A./N.A.
+1. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+2. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+3. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+4. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+5. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+7. Eve/90000002/eve@mail.com/Sheares/Mathematics
+8. John Doe/N.A./N.A./N.A./N.A.
+9. NewBob/98765432/N.A./N.A./N.A.
+10. NewDiana/82345678/N.A./UTown/N.A.
+11. O'Brien-Smith/N.A./N.A./N.A./N.A.
+12. Robert/91111111/a@b.com/N.A./Computer Science
+13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Temporary list sorted by course:
+1. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+2. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+3. Robert/91111111/a@b.com/N.A./Computer Science
+4. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+5. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+6. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+7. Eve/90000002/eve@mail.com/Sheares/Mathematics
+8. O'Brien-Smith/N.A./N.A./N.A./N.A.
+9. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+10. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+11. John Doe/N.A./N.A./N.A./N.A.
 12. NewBob/98765432/N.A./N.A./N.A.
 13. NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
@@ -2003,6 +2037,10 @@ Temporary list sorted by cap:
 1. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
 4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
 2. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
+1. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
+2. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems (CAP: 4.8)
+3. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
+4. Robert/91111111/a@b.com/N.A./Computer Science (CAP: 3.8)
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 0.0)
 6. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
@@ -2018,6 +2056,9 @@ Temporary list sorted by mcs:
 3. O'Brien-Smith/N.A./N.A./N.A./N.A. (MCs: 24)
 1. Alice Updated/N.A./N.A./N.A./N.A. (MCs: 16)
 2. Robert/91111111/N.A./N.A./Computer Science (MCs: 5)
+1. O'Brien-Smith/N.A./N.A./N.A./N.A. (MCs: 24)
+2. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems (MCs: 16)
+3. Robert/91111111/a@b.com/N.A./Computer Science (MCs: 5)
 4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (MCs: 4)
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (MCs: 4)
 6. John Doe/N.A./N.A./N.A./N.A. (MCs: 0)
@@ -2054,6 +2095,26 @@ Temporary list sorted by cap:
 1. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
 4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
 2. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
+1. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+2. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+3. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+4. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+5. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+7. Eve/90000002/eve@mail.com/Sheares/Mathematics
+8. John Doe/N.A./N.A./N.A./N.A.
+9. NewBob/98765432/N.A./N.A./N.A.
+10. NewDiana/82345678/N.A./UTown/N.A.
+11. O'Brien-Smith/N.A./N.A./N.A./N.A.
+12. Robert/91111111/a@b.com/N.A./Computer Science
+13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Temporary list sorted by cap:
+1. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
+2. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems (CAP: 4.8)
+3. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
+4. Robert/91111111/a@b.com/N.A./Computer Science (CAP: 3.8)
 5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 0.0)
 6. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
 7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
@@ -2080,8 +2141,8 @@ Added module CS3230 (A) to Alice Updated
 Undone: Module addition of CS3230 for Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
-2: Robert/91111111/N.A./N.A./Computer Science
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2: Robert/91111111/a@b.com/N.A./Computer Science
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
@@ -2096,14 +2157,14 @@ Undone: Module addition of CS3230 for Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Successfully deleted student:
-Alice Updated/N.A./N.A./N.A./N.A.
+Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Undone: Student deletion of Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
-2: Robert/91111111/N.A./N.A./Computer Science
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2: Robert/91111111/a@b.com/N.A./Computer Science
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
@@ -2123,8 +2184,8 @@ Student created: TempStudent
 Undone: Student creation of TempStudent
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
-2: Robert/91111111/N.A./N.A./Computer Science
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2: Robert/91111111/a@b.com/N.A./Computer Science
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
@@ -2144,8 +2205,8 @@ Student updated successfully.
 Undone: Student edit of Robert
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
-2: Robert/91111111/N.A./N.A./Computer Science
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2: Robert/91111111/a@b.com/N.A./Computer Science
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
@@ -2165,8 +2226,8 @@ Removed module CG1111A from Alice Updated
 Undone: Module removal of CG1111A for Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./N.A.
-2: Robert/91111111/N.A./N.A./Computer Science
+1: Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+2: Robert/91111111/a@b.com/N.A./Computer Science
 3: O'Brien-Smith/N.A./N.A./N.A./N.A.
 4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
@@ -2203,6 +2264,19 @@ Temporary list sorted by name:
 13. NewDiana/82345678/N.A./UTown/N.A.
 3. O'Brien-Smith/N.A./N.A./N.A./N.A.
 4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+1. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+2. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+3. Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
+4. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+5. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+7. Eve/90000002/eve@mail.com/Sheares/Mathematics
+8. John/91234567/a@b.com/N.A./N.A.
+9. John Doe/N.A./N.A./N.A./N.A.
+10. NewBob/98765432/N.A./N.A./N.A.
+11. NewDiana/82345678/N.A./UTown/N.A.
+12. O'Brien-Smith/N.A./N.A./N.A./N.A.
+13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Undone: Student edit of Alice Updated
@@ -2259,7 +2333,7 @@ Creation cancelled.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Successfully deleted student:
-Alice Updated/N.A./N.A./N.A./Information Systems
+Alice Updated/82222222/alice.updated@mail.com/New Block 20/Information Systems
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Input cannot be empty
