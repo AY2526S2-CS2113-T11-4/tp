@@ -159,7 +159,13 @@ Prefixes must be separated from text before with a space.
 ```
 status INDEX
 ```
-
+Example output:
+```
+> status 1
+----------------------------------------------------------------------------------------------------
+Index 1: Bronathan Bonglebong, Data Science and Analytics, Cap 3.8, 10/160 MCs completed. Status: Just Started.
+----------------------------------------------------------------------------------------------------
+```
 ---
 
 ### `undo`
