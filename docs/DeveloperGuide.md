@@ -68,9 +68,9 @@ The `App` component:
 
 ---
 
-#### Logic Component
+#### Parser Component
 
-Within the Logic component, `Parser` is responsible for interpreting raw user input into executable `Command` objects. It splits input into a command keyword and arguments, delegates argument tokenisation to `ArgumentTokenizer`, validates field values, and constructs the appropriate `Command`.
+The `Parser` component is responsible for interpreting raw user input into executable `Command` objects. It splits input into a command keyword and arguments, delegates argument tokenisation to `ArgumentTokenizer`, delegates validation to `Validator` and normalisation to `Normalizer`, and constructs the appropriate `Command`.
 
 ![ParserClassDiagram](images/ParserClassDiagram.png)
 
