@@ -42,7 +42,8 @@ public class DeleteCommand implements Command {
         if (deletedStudent == null || deletedIndex == -1) {
             throw new CommandException("Cannot undo: delete command was not executed");
         }
-        db.addStudent(deletedStudent);
+        db.insertStudent(deletedIndex, deletedStudent);
+        storage.saveStudentList(db);
         return new CommandResult("Undone: Student deletion of " + deletedStudent.getName());
     }
 
