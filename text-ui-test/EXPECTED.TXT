@@ -808,664 +808,664 @@ Johnn/Jane/N.A./N.A./N.A./N.A.
 Undone: Student deletion of Johnn/Jane
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid student index: 1 extra. Index must be an integer
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS2113 (A) to John
+Added module CS2113 (A) to Johnn/Jane
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS2101 (B+) to John
+Added module CS2101 (B+) to Johnn/Jane
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS2113 (B) to O'Brien-Smith
+Added module CS2113 (B) to John
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module IS1103 (A+) to Tan, Jun Wei (Jr.)
+Added module IS1103 (A+) to O'Brien-Smith
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module MA1521 (A-) to AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Added module MA1521 (A-) to Tan, Jun Wei (Jr.)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS1010 (S) to John Doe
+Added module CS1010 (S) to AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module GEA1000 (S) to John
+Added module GEA1000 (S) to Johnn/Jane
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS3203 (A) to O'Brien-Smith
+Added module CS3203 (A) to John
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS4234 (A) to Tan, Jun Wei (Jr.)
+Added module CS4234 (A) to O'Brien-Smith
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Module CS2113 already exists for this student.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid module code: C2113
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid module code: CSMATH
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS9999 (A) to John
+Added module CS9999 (A) to Johnn/Jane
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid grade: Z
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid grade: X
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Credits must be positive
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Credits must be positive
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid credits value: abc. Credits must be a positive integer.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Grade cannot be empty (e.g., CS2113/A or CS2113/A/2)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Module code cannot be empty (e.g., CS2113/A or CS2113/A/2)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Add requires: index + CODE/GRADE[/CREDITS] (e.g., 3 CS2113/A or 3 CS2113/A/2)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Index must be positive
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Student at index 999 does not exist
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CG1111A (A+) to John
+Added module CG1111A (A+) to Johnn/Jane
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Added module CS3244E (B) to O'Brien-Smith
+Added module CS3244E (B) to John
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Removed module CS2113 from Johnn/Jane
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Module CS2113 not found for Johnn/Jane
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Module CS9999 not found for John
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Error: Index must be positive
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Error: Student at index 999 does not exist
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Error: Remove requires an index and module code (e.g., 3 CS2113)
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Error: Remove requires an index and module code (e.g., 3 CS2113)
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+Removed module GEA1000 from Johnn/Jane
+----------------------------------------------------------------------------------------------------
+> ----------------------------------------------------------------------------------------------------
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Removed module CS2113 from John
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Module CS2113 not found for John
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Module CS9999 not found for O'Brien-Smith
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Error: Index must be positive
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Error: Student at index 999 does not exist
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Error: Remove requires an index and module code (e.g., 3 CS2113)
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Error: Remove requires an index and module code (e.g., 3 CS2113)
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Removed module GEA1000 from John
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-Removed module CS2113 from O'Brien-Smith
-----------------------------------------------------------------------------------------------------
-> ----------------------------------------------------------------------------------------------------
-1: John/91234567/a@b.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+1: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/82222222/N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./alice.updated@mail.com/N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./New Block 20/N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./Information Systems
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Added module CS2113 (A) to Alice Updated
@@ -1475,306 +1475,306 @@ Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Phone number is not a valid Singapore mobile number
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid email format
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Module format must be CODE/GRADE[/CREDITS] (e.g., m/CS2113/A or m/CS2113/A/2)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Module format must be CODE/GRADE[/CREDITS] (e.g., m/CS2113/A or m/CS2113/A/2)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid module code: INVALID
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Edit requires at least one field (e.g., n/John or m/CS2113/A).
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Index is compulsory for edit command
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid index to edit.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Index should be within range.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Index should be within range.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid formatting. Use prefixes: n/, p/, e/, a/, c/, m/. Example: edit 1 m/CS2113/A
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Credits must be positive
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Credits must be positive
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid credits value: abc. Credits must be a positive integer.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+2: John/91234567/a@b.com/N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
@@ -1782,42 +1782,60 @@ Student updated successfully.
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
 2: Robert/91111111/N.A./N.A./Computer Science
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Index 1: Alice Updated, N.A., Cap 4.8, 16/160 MCs completed. Status: Just Started.
 Modules and Grades:
-  - CS2101: B+ (4 MCs)
-  - CS9999: A (4 MCs)
   - CG1111A: A+ (4 MCs)
   - CS2113: A (4 MCs)
+  - CS9999: A (4 MCs)
+  - CS2101: B+ (4 MCs)
+
+Module Statistics:
+  Grade Distribution: 1 A+, 2 A's, 1 B+
+  Highest Grade: A (5.0)
+  Lowest Grade: B+ (4.0)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Index 2: Robert, Computer Science, Cap 3.8, 5/160 MCs completed. Status: Just Started.
 Modules and Grades:
   - CS3203: A (1 MCs)
   - CS3244E: B (4 MCs)
+
+Module Statistics:
+  Grade Distribution: 1 A, 1 B
+  Highest Grade: A (5.0)
+  Lowest Grade: B (3.5)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Index 3: Tan, Jun Wei (Jr.), N.A., Cap 5.0, 24/160 MCs completed. Status: Just Started.
+Index 3: O'Brien-Smith, N.A., Cap 5.0, 24/160 MCs completed. Status: Just Started.
 Modules and Grades:
-  - IS1103: A+ (4 MCs)
   - CS4234: A (20 MCs)
+  - IS1103: A+ (4 MCs)
+
+Module Statistics:
+  Grade Distribution: 1 A+, 1 A
+  Highest Grade: A+ (5.0)
+  Lowest Grade: A+ (5.0)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Index 5: John Doe, N.A., Cap 0.0, 4/160 MCs completed. Status: Just Started.
+Index 5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, N.A., Cap 0.0, 4/160 MCs completed. Status: Just Started.
 Modules and Grades:
   - CS1010: S (4 MCs)
+
+Module Statistics:
+  Grade Distribution: 1 S
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid index: 0
@@ -1849,12 +1867,12 @@ Error: Invalid index for status: 99999999999999999
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
 1. Alice Updated/N.A./N.A./N.A./N.A.
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
 1. Alice Updated/N.A./N.A./N.A./N.A.
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 No matching students found.
@@ -1870,38 +1888,38 @@ No matching students found.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
-7. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 No matching students found.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
 1. Alice Updated/N.A./N.A./N.A./N.A.
 2. Robert/91111111/N.A./N.A./Computer Science
-3. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5. John Doe/N.A./N.A./N.A./N.A.
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9. Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10. Eve/90000002/eve@mail.com/Sheares/Mathematics
-11. NewBob/98765432/N.A./N.A./N.A.
-12. NewDiana/82345678/N.A./UTown/N.A.
-13. Johnn/Jane/N.A./N.A./N.A./N.A.
+3. O'Brien-Smith/N.A./N.A./N.A./N.A.
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6. John Doe/N.A./N.A./N.A./N.A.
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics
+12. NewBob/98765432/N.A./N.A./N.A.
+13. NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9. Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10. Eve/90000002/eve@mail.com/Sheares/Mathematics
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Find query cannot be empty.
@@ -1912,15 +1930,15 @@ Error: Find query cannot be empty.
 > ----------------------------------------------------------------------------------------------------
 Here are the matching students in your list:
 2. Robert/91111111/N.A./N.A./Computer Science
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 2. Robert, Computer Science
-6. Alice, Computer Science
+7. Alice, Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 2. Robert, Computer Science
-6. Alice, Computer Science
+7. Alice, Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 1. Alice Updated, CS2113: A
@@ -1945,7 +1963,7 @@ Error: Module search query cannot be empty.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 2. Robert, Computer Science
-6. Alice, Computer Science
+7. Alice, Computer Science
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by name:
@@ -1957,9 +1975,9 @@ Temporary list sorted by name:
 6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
 7. Eve/90000002/eve@mail.com/Sheares/Mathematics
 8. John Doe/N.A./N.A./N.A./N.A.
-9. Johnn/Jane/N.A./N.A./N.A./N.A.
-10. NewBob/98765432/N.A./N.A./N.A.
-11. NewDiana/82345678/N.A./UTown/N.A.
+9. NewBob/98765432/N.A./N.A./N.A.
+10. NewDiana/82345678/N.A./UTown/N.A.
+11. O'Brien-Smith/N.A./N.A./N.A./N.A.
 12. Robert/91111111/N.A./N.A./Computer Science
 13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
@@ -1972,44 +1990,44 @@ Temporary list sorted by course:
 5. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
 6. Eve/90000002/eve@mail.com/Sheares/Mathematics
 7. Alice Updated/N.A./N.A./N.A./N.A.
-8. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-9. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-10. John Doe/N.A./N.A./N.A./N.A.
-11. NewBob/98765432/N.A./N.A./N.A.
-12. NewDiana/82345678/N.A./UTown/N.A.
-13. Johnn/Jane/N.A./N.A./N.A./N.A.
+8. O'Brien-Smith/N.A./N.A./N.A./N.A.
+9. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+10. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+11. John Doe/N.A./N.A./N.A./N.A.
+12. NewBob/98765432/N.A./N.A./N.A.
+13. NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by cap:
-1. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 5.0)
+1. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
 2. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
-3. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 4.5)
+3. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
 4. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
-5. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
-7. Bob/98765432/bob@u.nus.edu/RC4/Information Systems (CAP: 0.0)
-8. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics (CAP: 0.0)
-9. Diana/90000001/diana@mail.com/UTown/Computer Engineering (CAP: 0.0)
-10. Eve/90000002/eve@mail.com/Sheares/Mathematics (CAP: 0.0)
-11. NewBob/98765432/N.A./N.A./N.A. (CAP: 0.0)
-12. NewDiana/82345678/N.A./UTown/N.A. (CAP: 0.0)
-13. Johnn/Jane/N.A./N.A./N.A./N.A. (CAP: 0.0)
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 0.0)
+6. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems (CAP: 0.0)
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics (CAP: 0.0)
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering (CAP: 0.0)
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics (CAP: 0.0)
+12. NewBob/98765432/N.A./N.A./N.A. (CAP: 0.0)
+13. NewDiana/82345678/N.A./UTown/N.A. (CAP: 0.0)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by mcs:
-1. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (MCs: 24)
+1. O'Brien-Smith/N.A./N.A./N.A./N.A. (MCs: 24)
 2. Alice Updated/N.A./N.A./N.A./N.A. (MCs: 16)
 3. Robert/91111111/N.A./N.A./Computer Science (MCs: 5)
-4. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (MCs: 4)
-5. John Doe/N.A./N.A./N.A./N.A. (MCs: 4)
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (MCs: 0)
-7. Bob/98765432/bob@u.nus.edu/RC4/Information Systems (MCs: 0)
-8. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics (MCs: 0)
-9. Diana/90000001/diana@mail.com/UTown/Computer Engineering (MCs: 0)
-10. Eve/90000002/eve@mail.com/Sheares/Mathematics (MCs: 0)
-11. NewBob/98765432/N.A./N.A./N.A. (MCs: 0)
-12. NewDiana/82345678/N.A./UTown/N.A. (MCs: 0)
-13. Johnn/Jane/N.A./N.A./N.A./N.A. (MCs: 0)
+4. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (MCs: 4)
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (MCs: 4)
+6. John Doe/N.A./N.A./N.A./N.A. (MCs: 0)
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (MCs: 0)
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems (MCs: 0)
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics (MCs: 0)
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering (MCs: 0)
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics (MCs: 0)
+12. NewBob/98765432/N.A./N.A./N.A. (MCs: 0)
+13. NewDiana/82345678/N.A./UTown/N.A. (MCs: 0)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid category. Available categories: name, course, cap, mcs
@@ -2024,27 +2042,27 @@ Temporary list sorted by name:
 6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
 7. Eve/90000002/eve@mail.com/Sheares/Mathematics
 8. John Doe/N.A./N.A./N.A./N.A.
-9. Johnn/Jane/N.A./N.A./N.A./N.A.
-10. NewBob/98765432/N.A./N.A./N.A.
-11. NewDiana/82345678/N.A./UTown/N.A.
+9. NewBob/98765432/N.A./N.A./N.A.
+10. NewDiana/82345678/N.A./UTown/N.A.
+11. O'Brien-Smith/N.A./N.A./N.A./N.A.
 12. Robert/91111111/N.A./N.A./Computer Science
 13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Temporary list sorted by cap:
-1. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 5.0)
+1. O'Brien-Smith/N.A./N.A./N.A./N.A. (CAP: 5.0)
 2. Alice Updated/N.A./N.A./N.A./N.A. (CAP: 4.8)
-3. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 4.5)
+3. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A. (CAP: 4.5)
 4. Robert/91111111/N.A./N.A./Computer Science (CAP: 3.8)
-5. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
-6. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
-7. Bob/98765432/bob@u.nus.edu/RC4/Information Systems (CAP: 0.0)
-8. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics (CAP: 0.0)
-9. Diana/90000001/diana@mail.com/UTown/Computer Engineering (CAP: 0.0)
-10. Eve/90000002/eve@mail.com/Sheares/Mathematics (CAP: 0.0)
-11. NewBob/98765432/N.A./N.A./N.A. (CAP: 0.0)
-12. NewDiana/82345678/N.A./UTown/N.A. (CAP: 0.0)
-13. Johnn/Jane/N.A./N.A./N.A./N.A. (CAP: 0.0)
+5. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A. (CAP: 0.0)
+6. John Doe/N.A./N.A./N.A./N.A. (CAP: 0.0)
+7. Alice/81234567/alice@u.nus.edu/PGP/Computer Science (CAP: 0.0)
+8. Bob/98765432/bob@u.nus.edu/RC4/Information Systems (CAP: 0.0)
+9. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics (CAP: 0.0)
+10. Diana/90000001/diana@mail.com/UTown/Computer Engineering (CAP: 0.0)
+11. Eve/90000002/eve@mail.com/Sheares/Mathematics (CAP: 0.0)
+12. NewBob/98765432/N.A./N.A./N.A. (CAP: 0.0)
+13. NewDiana/82345678/N.A./UTown/N.A. (CAP: 0.0)
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Error: Invalid category. Available categories: name, course, cap, mcs
@@ -2064,17 +2082,17 @@ Undone: Module addition of CS3230 for Alice Updated
 > ----------------------------------------------------------------------------------------------------
 1: Alice Updated/N.A./N.A./N.A./N.A.
 2: Robert/91111111/N.A./N.A./Computer Science
-3: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-4: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-5: John Doe/N.A./N.A./N.A./N.A.
-6: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-7: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-8: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-9: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-10: Eve/90000002/eve@mail.com/Sheares/Mathematics
-11: NewBob/98765432/N.A./N.A./N.A.
-12: NewDiana/82345678/N.A./UTown/N.A.
-13: Johnn/Jane/N.A./N.A./N.A./N.A.
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Successfully deleted student:
@@ -2084,19 +2102,19 @@ Alice Updated/N.A./N.A./N.A./N.A.
 Undone: Student deletion of Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Robert/91111111/N.A./N.A./Computer Science
-2: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-3: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-4: John Doe/N.A./N.A./N.A./N.A.
-5: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-6: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-7: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-8: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-9: Eve/90000002/eve@mail.com/Sheares/Mathematics
-10: NewBob/98765432/N.A./N.A./N.A.
-11: NewDiana/82345678/N.A./UTown/N.A.
-12: Johnn/Jane/N.A./N.A./N.A./N.A.
-13: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/N.A./N.A./N.A./N.A.
+2: Robert/91111111/N.A./N.A./Computer Science
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student created: TempStudent
@@ -2105,64 +2123,64 @@ Student created: TempStudent
 Undone: Student creation of TempStudent
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Robert/91111111/N.A./N.A./Computer Science
-2: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-3: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-4: John Doe/N.A./N.A./N.A./N.A.
-5: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-6: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-7: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-8: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-9: Eve/90000002/eve@mail.com/Sheares/Mathematics
-10: NewBob/98765432/N.A./N.A./N.A.
-11: NewDiana/82345678/N.A./UTown/N.A.
-12: Johnn/Jane/N.A./N.A./N.A./N.A.
-13: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/N.A./N.A./N.A./N.A.
+2: Robert/91111111/N.A./N.A./Computer Science
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Student updated successfully.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Undone: Student edit of Tan, Jun Wei (Jr.)
+Undone: Student edit of Robert
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Robert/91111111/N.A./N.A./Computer Science
-2: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-3: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-4: John Doe/N.A./N.A./N.A./N.A.
-5: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-6: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-7: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-8: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-9: Eve/90000002/eve@mail.com/Sheares/Mathematics
-10: NewBob/98765432/N.A./N.A./N.A.
-11: NewDiana/82345678/N.A./UTown/N.A.
-12: Johnn/Jane/N.A./N.A./N.A./N.A.
-13: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/N.A./N.A./N.A./N.A.
+2: Robert/91111111/N.A./N.A./Computer Science
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Module CG1111A not found for Robert
+Removed module CG1111A from Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Error: Cannot undo: remove command was not executed or module was not found
+Undone: Module removal of CG1111A for Alice Updated
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Robert/91111111/N.A./N.A./Computer Science
-2: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
-3: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-4: John Doe/N.A./N.A./N.A./N.A.
-5: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-6: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-7: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-8: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-9: Eve/90000002/eve@mail.com/Sheares/Mathematics
-10: NewBob/98765432/N.A./N.A./N.A.
-11: NewDiana/82345678/N.A./UTown/N.A.
-12: Johnn/Jane/N.A./N.A./N.A./N.A.
-13: Alice Updated/N.A./N.A./N.A./N.A.
+1: Alice Updated/N.A./N.A./N.A./N.A.
+2: Robert/91111111/N.A./N.A./Computer Science
+3: O'Brien-Smith/N.A./N.A./N.A./N.A.
+4: Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
+5: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
+6: John Doe/N.A./N.A./N.A./N.A.
+7: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
+8: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+9: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+10: Diana/90000001/diana@mail.com/UTown/Computer Engineering
+11: Eve/90000002/eve@mail.com/Sheares/Mathematics
+12: NewBob/98765432/N.A./N.A./N.A.
+13: NewDiana/82345678/N.A./UTown/N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Undone: Student edit of O'Brien-Smith
+Undone: Student edit of John
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Undone: Student edit of Alice Updated
@@ -2175,16 +2193,16 @@ Temporary list sorted by name:
 1. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
 2. Alice/81234567/alice@u.nus.edu/PGP/Computer Science
 3. Alice Updated/N.A./N.A./N.A./N.A.
-4. Alice Updated/N.A./N.A./N.A./N.A.
-5. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-6. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-7. Diana/90000001/diana@mail.com/UTown/Computer Engineering
-8. Eve/90000002/eve@mail.com/Sheares/Mathematics
+4. Bob/98765432/bob@u.nus.edu/RC4/Information Systems
+5. Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
+6. Diana/90000001/diana@mail.com/UTown/Computer Engineering
+7. Eve/90000002/eve@mail.com/Sheares/Mathematics
+8. John/91234567/a@b.com/N.A./N.A.
 9. John Doe/N.A./N.A./N.A./N.A.
-10. Johnn/Jane/N.A./N.A./N.A./N.A.
-11. NewBob/98765432/N.A./N.A./N.A.
-12. NewDiana/82345678/N.A./UTown/N.A.
-13. O'Brien-Smith/N.A./N.A./N.A./N.A.
+10. NewBob/98765432/N.A./N.A./N.A.
+11. NewDiana/82345678/N.A./UTown/N.A.
+12. O'Brien-Smith/N.A./N.A./N.A./N.A.
+13. Tan, Jun Wei (Jr.)/N.A./N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Undone: Student edit of Alice Updated
@@ -2232,23 +2250,12 @@ Error: Unknown command: blah. For info on available commands, try "help".
 Error: Unknown command: blah. For info on available commands, try "help".
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-Student created: John
+Warning: at least one student shares the following fields: name
+2: John/91234567/a@b.com/N.A./N.A.
+Type 'y' to confirm, or anything else to cancel.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
-1: Alice Updated/N.A./N.A./N.A./Information Systems
-2: O'Brien-Smith/N.A./N.A./N.A./N.A.
-3: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/N.A./N.A./N.A./N.A.
-4: John Doe/N.A./N.A./N.A./N.A.
-5: Alice/81234567/alice@u.nus.edu/PGP/Computer Science
-6: Bob/98765432/bob@u.nus.edu/RC4/Information Systems
-7: Charlie/88888888/charlie@u.nus.edu/Cinnamon/Business Analytics
-8: Diana/90000001/diana@mail.com/UTown/Computer Engineering
-9: Eve/90000002/eve@mail.com/Sheares/Mathematics
-10: NewBob/98765432/N.A./N.A./N.A.
-11: NewDiana/82345678/N.A./UTown/N.A.
-12: Johnn/Jane/N.A./N.A./N.A./N.A.
-13: Alice Updated/N.A./N.A./N.A./N.A.
-14: John/N.A./N.A./N.A./N.A.
+Creation cancelled.
 ----------------------------------------------------------------------------------------------------
 > ----------------------------------------------------------------------------------------------------
 Successfully deleted student:
