@@ -5,7 +5,7 @@ SE-EDU Addressbook 3 Developer Guide: https://se-education.org/addressbook-level
 
 ## Design & implementation
 
-### Design:
+### Design: Kai Jie
 
 Below is a diagram showing the high level design of Dextro.
 
@@ -116,48 +116,122 @@ The `Storage` component:
 
 #### Common Classes
 
-The following classes are used across multiple components:
+The following classes are used across multiple components.
 
-- `Command` — interface defining `execute(StudentDatabase, Storage)`, `undo(StudentDatabase, Storage)`, and `isUndoable()`, implemented by all command classes.
-- `CommandResult` — encapsulates the outcome of a command execution, carrying the display message and an optional exit flag read by `App`.
-- `CommandException` — unchecked exception thrown by command implementations when execution cannot proceed (e.g. out-of-bounds index).
-- `ParseException` — unchecked exception thrown by `Parser` and `ArgumentTokenizer` when input is malformed.
-- `Config` — `final` utility class with only static String constants for command keywords (e.g. `CMD_CREATE`, `CMD_DELETE`), referenced by `Parser`.
- 
+##### Command
+
+`Command` is an interface implemented by all command classes. It defines the contract for execution, undoing, and reporting undo eligibility.
+
+![CommandClassDiagram](images/CommandClassDiagram.png)
+
+The fourteen concrete implementations are:
+
+| Class                | Undoable |
+|----------------------|----------|
+| `CreateCommand`      | yes      |
+| `ForceCreateCommand` | yes      |
+| `DeleteCommand`      | yes      |
+| `EditCommand`        | yes      |
+| `AddCommand`         | yes      |
+| `RemoveCommand`      | yes      |
+| `SortCommand`        | yes      |
+| `ListCommand`        | no       |
+| `FindCommand`        | no       |
+| `SearchCommand`      | no       |
+| `StatusCommand`      | no       |
+| `HelpCommand`        | no       |
+| `ExitCommand`        | no       |
+| `UndoCommand`        | no       |
+
+`AddCommand` and `RemoveCommand` reside in the `dextro.command.module` sub-package; all others are in `dextro.command`.
+
 ---
 
+##### CommandResult
 
+`CommandResult` encapsulates the outcome of a command execution. It is created by every `Command` implementation and read by `App` after each `execute` call.
+
+![CommandResultClassDiagram](images/CommandResultClassDiagram.png)
+
+`CommandResult`:
+- carries a `message` string displayed to the user via `Ui.show()`.
+- carries an `exit` flag; when `shouldExit()` returns `true`, `App` breaks its run loop.
+- optionally carries a `pendingCommand` (multiplicity `0..1`) for the duplicate-student confirmation flow, where `CreateCommand` returns a `CommandResult` wrapping a `ForceCreateCommand` that `App` executes on user confirmation.
+
+---
+
+##### Exceptions
+
+`CommandException` and `ParseException` are both unchecked exceptions (extending `RuntimeException`) thrown by their respective subsystems and caught centrally by `App`.
+
+![ExceptionsClassDiagram](images/ExceptionsClassDiagram.png)
+
+- `CommandException` is thrown by all fourteen `Command` implementations when execution cannot proceed (e.g. an out-of-bounds index or an invalid operation).
+- `ParseException` is thrown by `Parser`, `ArgumentTokenizer`, and `Validator` when input is malformed or a field fails validation.
+- `App` catches both in its main loop and displays the error message via `Ui.show()`.
+
+---
+
+##### Config
+
+`Config` is a `final` utility class with a private constructor, containing only `public static final String` constants for every command keyword.
+
+![ConfigClassDiagram](images/ConfigClassDiagram.png)
+
+`Parser` is the sole consumer of `Config`, using its constants in a switch expression to route command keywords to the correct `parseX()` method. Centralising the keywords in `Config` means a keyword change requires editing exactly one class.
+
+---
 
 
 ### Implementation: Kai Jie
 
-#### Create Command
+#### CreateCommand
 
-The `CreateCommand` allows users to create a new student record with a required name and optional phone, email, address, and course fields. It supports undo by storing the index of the created student and removing it on `undo()`.
-
-##### Class Diagram
+`CreateCommand` handles the creation of a new student record. It checks for duplicate fields before committing, and supports undo by recording the index of the student it created.
 
 ![CreateCommandClassDiagram](images/CreateCommandClassDiagram.png)
 
-The class diagram shows the relationship between `CreateCommand` and other components:
-- `CreateCommand` implements the `Command` interface.
-- It uses `Student.Builder` to construct a `Student` and `StudentDatabase.addStudent()` to persist it.
-- It calls `Storage.saveStudentList()` to write changes to disk.
-- It returns a `CommandResult` containing a confirmation message with the student's name.
-
-##### Sequence Diagram
+The sequence diagram below shows the flow for `create n/Alice p/91234567 e/alice@u.nus.edu c/CS`, where no duplicate fields are found.
 
 ![CreateCommandSequence](images/CreateCommandSequence.png)
 
-The sequence diagram illustrates the execution flow:
-1. User inputs the create command with arguments (e.g., `create n/Alice p/91234567 e/alice@u.nus.edu c/CS`).
-2. `Parser.parse()` identifies the `create` keyword and delegates to `Parser.parseCreate()`.
-3. `Parser.parseCreate()` constructs an `ArgumentTokenizer` with prefixes `n/`, `p/`, `e/`, `a/`, `c/` and calls `validateName()`, `validatePhone()`, `validateEmail()`, `validateAddress()`.
-4. A `CreateCommand` is constructed with the validated fields.
-5. `App` calls `CreateCommand.execute(db, storage)`.
-6. `CreateCommand` builds a `Student` via `Student.Builder`, calls `db.addStudent(student)`, then `storage.saveStudentList(db)`.
-7. A `CommandResult` is returned with the message `"Student created: <name>"`.
+When `execute(db, storage)` is called:
+- It first calls `db.findDuplicateFields(...)` to check for conflicts with existing students.
+- If conflicts exist, it returns a `CommandResult` wrapping a `ForceCreateCommand` as its `pendingCommand`, with `requiresConfirmation()` set to `true`. `App` then prompts the user for confirmation and executes the `ForceCreateCommand` if confirmed (see `ForceCreateCommand` below).
+- If no conflicts exist, it delegates to the package-private `doCreate(db, storage)`.
 
+`doCreate(db, storage)`:
+- Constructs a new `Student` using `Student.Builder`, setting all five fields.
+- Calls `db.addStudent(student)` and `storage.saveStudentList(db)` to persist the change.
+- Records `createdIndex` for use by `undo`.
+
+When `undo(db, storage)` is called:
+- Throws `CommandException` if `createdIndex == -1` (command was never executed).
+- Throws `CommandException` if `createdIndex >= db.getStudentCount()` (student no longer exists at that index).
+- Otherwise calls `db.removeStudent(createdIndex)` to reverse the creation.
+
+---
+
+#### ForceCreateCommand
+
+`ForceCreateCommand` is a thin wrapper around `CreateCommand` that bypasses the duplicate check. It is never constructed by `Parser` — it is created exclusively by `CreateCommand.execute` when a conflict is detected, and returned to `App` inside a `CommandResult`.
+
+![ForceCreateCommandSequence](images/ForceCreateCommandClassDiagram.png)
+
+The sequence diagram below shows the flow after `App` receives a `CommandResult` with `requiresConfirmation() == true` from `CreateCommand`.
+
+![ForceCreateCommandSequence](images/ForceCreateCommandSequence.png)
+
+When the user confirms with `y`:
+- `App` retrieves the `ForceCreateCommand` via `result.getPendingCommand()`.
+- `App` calls `confirmed.execute(db, storage)`, which delegates directly to `inner.doCreate(db, storage)`, skipping `findDuplicateFields`.
+- `App` pushes the `ForceCreateCommand` (not the original `CreateCommand`) onto `CommandHistory`.
+
+When the user does not confirm:
+- `App` displays `"Creation cancelled."` and nothing is pushed to `CommandHistory`.
+
+When `undo(db, storage)` is called on a `ForceCreateCommand`:
+- It delegates to `inner.undo(db, storage)`, which removes the student at `createdIndex` from `StudentDatabase`.
 ---
 
 #### Delete Command
@@ -441,6 +515,8 @@ The class diagram shows the relationship between `SearchCommand` and other compo
 - Returns a `CommandResult` containing the search results based on the specified search criteria
 
 ##### Sequence Diagram
+
+![SearchCommandSequence](images/SearchCommandSequence.png)
 
 The sequence diagram illustrates the execution flow:
 - User executes the search command with specified search criteria (e.g., name, course, mcs)
