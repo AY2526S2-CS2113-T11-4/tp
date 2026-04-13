@@ -48,7 +48,7 @@ public class SearchCommandTest {
     @Test
     public void execute_searchByCourseMatch_success() {
         // Search for course containing "Science" using c/ prefix
-        SearchCommand command = new SearchCommand("Science", null);
+        SearchCommand command = new SearchCommand("Science", null, null);
         CommandResult result = command.execute(db);
 
         String expectedOutput = "1. John Doe, Computer Science";
@@ -57,7 +57,7 @@ public class SearchCommandTest {
 
     @Test
     public void execute_searchByCourseNoMatch_showsNotFound() {
-        SearchCommand command = new SearchCommand("Medicine", null);
+        SearchCommand command = new SearchCommand("Medicine", null, null);
         CommandResult result = command.execute(db);
 
         assertEquals("No matching students found.", result.getMessage());
@@ -66,7 +66,7 @@ public class SearchCommandTest {
     @Test
     public void execute_searchByModuleMatch_success() {
         // Search for module "CS2113" using m/ prefix
-        SearchCommand command = new SearchCommand(null, "CS2113");
+        SearchCommand command = new SearchCommand(null, "CS2113", null);
         CommandResult result = command.execute(db);
 
         String expectedOutput = "1. John Doe, CS2113: A\n" +
@@ -82,18 +82,19 @@ public class SearchCommandTest {
         john.addModule(new Module("CS2040", Grade.B_PLUS));
 
         // Search for "CS", which should match both CS2113 and CS2040 for John
-        SearchCommand command = new SearchCommand(null, "CS");
+        SearchCommand command = new SearchCommand(null, "CS", null);
         CommandResult result = command.execute(db);
 
-        String expectedOutput = "1. John Doe, CS2113: A\n" +
-                "1. John Doe, CS2040: B+\n" +
-                "2. Jane Smith, CS2113: B";
+        String expectedOutput = """
+                1. John Doe, CS2113: A
+                1. John Doe, CS2040: B+
+                2. Jane Smith, CS2113: B""";
         assertEquals(expectedOutput, result.getMessage());
     }
 
     @Test
     public void execute_searchByModuleNoMatch_showsNotFound() {
-        SearchCommand command = new SearchCommand(null, "EE2026");
+        SearchCommand command = new SearchCommand(null, "EE2026", null);
         CommandResult result = command.execute(db);
 
         assertEquals("No matching students found.", result.getMessage());
@@ -101,7 +102,7 @@ public class SearchCommandTest {
 
     @Test
     public void undo_throwsCommandException() {
-        SearchCommand command = new SearchCommand("Science", null);
+        SearchCommand command = new SearchCommand("Science", null, null);
 
         assertThrows(CommandException.class, () -> command.undo(db));
         assertFalse(command.isUndoable());

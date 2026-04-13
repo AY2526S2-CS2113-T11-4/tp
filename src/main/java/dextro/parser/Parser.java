@@ -227,11 +227,13 @@ public class Parser {
             throw new ParseException("Search query cannot be empty.");
         }
 
-        ArgumentTokenizer tokenizer = new ArgumentTokenizer(args, "c/", "m/");
+        ArgumentTokenizer tokenizer = new ArgumentTokenizer(args, "c/", "m/", "p/");
         String course = tokenizer.getValue("c/");
         String module = tokenizer.getValue("m/");
+        String phone = tokenizer.getValue("p/");
 
-        if (course != null && module != null) {
+
+        if (course != null && module != null && phone != null) {
             throw new ParseException("Cannot search by both course and module at the same time.");
         }
 
@@ -239,12 +241,17 @@ public class Parser {
             if (course.isBlank()) {
                 throw new ParseException("Course search query cannot be empty.");
             }
-            return new SearchCommand(course.strip(), null);
+            return new SearchCommand(course.strip(), null, null);
         } else if (module != null) {
             if (module.isBlank()) {
                 throw new ParseException("Module search query cannot be empty.");
             }
-            return new SearchCommand(null, module.strip());
+            return new SearchCommand(null, module.strip(), null);
+        } else if (phone != null) {
+            if (phone.isBlank()) {
+                throw new ParseException("Phone search query cannot be empty.");
+            }
+            return new SearchCommand(null, null, phone.strip());
         } else {
             throw new ParseException("I'm sorry, I think you meant to use the find function? " +
                     "The search function only works if you input a valid prefix (e.g., c/CS or m/CS2113).");

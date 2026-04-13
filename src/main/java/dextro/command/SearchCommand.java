@@ -12,10 +12,12 @@ public class SearchCommand implements Command {
 
     private final String course;
     private final String moduleCode;
+    private final String phone;
 
-    public SearchCommand(String course, String moduleCode) {
+    public SearchCommand(String course, String moduleCode, String phone) {
         this.course = course;
         this.moduleCode = moduleCode;
+        this.phone = phone;
     }
 
     @Override
@@ -41,9 +43,16 @@ public class SearchCommand implements Command {
                         sb.append(originalIndex).append(". ")
                                 .append(student.getName()).append(", ")
                                 .append(m.getCode()).append(": ")
-                                .append(m.getGrade().toString()).append("\n");
+                                .append(m.getGrade().toString()).append(System.lineSeparator());
                         found = true;
                     }
+                }
+            } else if (phone != null) {
+                if (student.getPhone() != null && student.getPhone().contains(phone)) {
+                    sb.append(originalIndex).append(". ")
+                            .append(student.getName()).append(", ")
+                            .append(student.getPhone()).append(System.lineSeparator());
+                    found = true;
                 }
             }
         }
