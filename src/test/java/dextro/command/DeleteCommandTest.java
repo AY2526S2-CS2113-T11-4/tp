@@ -128,6 +128,26 @@ class DeleteCommandTest {
     }
 
     @Test
+    void undo_afterDeleteFirst_restoresAtOriginalPosition() throws CommandException {
+        DeleteCommand cmd = new DeleteCommand(1);
+        cmd.execute(db, storage);
+        cmd.undo(db, storage);
+        assertEquals("ALICE", db.getStudent(0).getName());
+        assertEquals("BOB", db.getStudent(1).getName());
+        assertEquals("CHARLIE", db.getStudent(2).getName());
+    }
+
+    @Test
+    void undo_afterDeleteMiddle_restoresAtOriginalPosition() throws CommandException {
+        DeleteCommand cmd = new DeleteCommand(2);
+        cmd.execute(db, storage);
+        cmd.undo(db, storage);
+        assertEquals("ALICE", db.getStudent(0).getName());
+        assertEquals("BOB", db.getStudent(1).getName());
+        assertEquals("CHARLIE", db.getStudent(2).getName());
+    }
+
+    @Test
     void undo_withoutExecute_throwsCommandException() {
         DeleteCommand cmd = new DeleteCommand(1);
         assertThrows(CommandException.class, () -> cmd.undo(db, storage));

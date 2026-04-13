@@ -40,7 +40,7 @@ public class EditCommand implements Command {
     @Override
     public CommandResult execute(StudentDatabase db, Storage storage) throws CommandException {
         int studentCount = db.getStudentCount();
-        if (index > studentCount || index < 0) {
+        if (index >= studentCount || index < 0) {
             throw new CommandException("Index should be within range.");
         }
         Student existing = db.getStudent(index);

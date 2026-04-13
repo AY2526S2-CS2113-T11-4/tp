@@ -137,6 +137,16 @@ Here are the matching students in your list:
 1. John/87654321/N.A./N.A./N.A.
 ----------------------------------------------------------------------------------------------------
 ```
+```
+> find n.a
+----------------------------------------------------------------------------------------------------
+Here are the matching students in your list:
+1. JOHN/N.A./N.A./N.A./N.A.
+2. janny/N.A./janny@gmail.com/N.A./N.A.
+3. John doe/91234678/email@gmail.com/bukit batok/N.A.
+----------------------------------------------------------------------------------------------------
+```
+User can use command: find n.a to query all records of null/missing value for manual validation or filtering if required.
 ---
 
 ### `search`
@@ -153,19 +163,37 @@ Prefix for specific field must be separated from command text with a space.
 ---
 
 ### `status`
-**Description:** Shows the GPA, degree completion progress and summary of a student.
+**Description:** Shows the GPA, degree completion progress and summary of a student. Displays all modules sorted by grade (highest to lowest) along with module statistics including grade distribution, highest grade, and lowest grade.
 
 **Syntax:**
 ```
 status INDEX
 ```
-Example output:
+
+**Example:**
 ```
 > status 1
 ----------------------------------------------------------------------------------------------------
-Index 1: Bronathan Bonglebong, Data Science and Analytics, Cap 3.8, 10/160 MCs completed. Status: Just Started.
+Index 1: Alice, Computer Science, Cap 4.8, 16/160 MCs completed. Status: Just Started.
+Modules and Grades:
+  - CG1111A: A+ (4 MCs)
+  - CS2113: A (4 MCs)
+  - CS9999: A (4 MCs)
+  - CS2101: B+ (4 MCs)
+
+Module Statistics:
+  Grade Distribution: 1 A+, 2 A's, 1 B+
+  Highest Grade: A+ (5.0)
+  Lowest Grade: B+ (4.0)
 ----------------------------------------------------------------------------------------------------
 ```
+
+**Notes:**
+- Modules are automatically sorted by grade from highest to lowest
+- Module statistics exclude S/U (Satisfactory/Unsatisfactory) grades
+- Grade distribution shows the count of each grade obtained
+- If no modules have been added, displays "No modules added yet."
+
 ---
 
 ### `undo`
@@ -229,6 +257,8 @@ Error: Module MA1511 already exists for this student.
 Adding duplicate modules under the same student is not allowed.
 
 Modules are validated against a pattern that fits all existing NUS module codes; non-existent modules that follow the same format are allowed.
+
+**Note:** If CREDITS is not specified, the module will default to 4 MCs (e.g., `add 1 CS2113/A` will add CS2113 with 4 MCs).
 
 ---
 
