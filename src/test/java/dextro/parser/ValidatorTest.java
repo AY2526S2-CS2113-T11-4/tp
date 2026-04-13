@@ -38,11 +38,7 @@ class ValidatorTest {
         assertEquals("JOHN DOE", Validator.validateName("JOHN DOE"));
     }
 
-    @Test
-    void validateName_multipleSpaces_collapsedToOne() throws Exception {
-        assertEquals("JOHN DOE", Validator.validateName("JOHN  DOE"));
-        assertEquals("JOHN DOE", Validator.validateName("JOHN   DOE"));
-    }
+
 
     @Test
     void validateName_specialCharsAllowed_returnsName() throws Exception {
@@ -145,11 +141,6 @@ class ValidatorTest {
     void validateAddress_tooLong_throwsParseException() {
         assertThrows(ParseException.class,
                 () -> Validator.validateAddress("A".repeat(201)));
-    }
-
-    @Test
-    void validateAddress_multipleSpaces_collapsedToOne() throws ParseException {
-        assertEquals("Orchard Road", Validator.validateAddress("Orchard  Road"));
     }
 
     // ===== validateModuleCode =====

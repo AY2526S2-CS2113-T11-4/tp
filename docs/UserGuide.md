@@ -263,7 +263,7 @@ Modules are validated against a pattern that fits all existing NUS module codes;
 ---
 
 ### `remove`
-**Description:** Removes all modules matching the input from a student.
+**Description:** Removes module exactly matching the input from a student.
 
 **Syntax:**
 ```
@@ -272,8 +272,14 @@ remove INDEX CODE
 
 **Example:**
 ```
-remove 1 Cs101
-remove 1 cG1111a
+> remove 1 Cs1010
+----------------------------------------------------------------------------------------------------
+Removed module CS1010 from John
+----------------------------------------------------------------------------------------------------
+> remove 1 cG1111a
+----------------------------------------------------------------------------------------------------
+Removed module CG1111A from hi
+----------------------------------------------------------------------------------------------------
 ```
 
 CODE is case-insensitive
@@ -283,38 +289,43 @@ CODE is case-insensitive
 ##  Field Constraints
 - `n/` → Name
   - Must be less than 100 characters long.
-  - Must contain only letters, spaces, and the following special symbols: `, ( ) . - / @ '`
+  - Must contain only letters, spaces, and the following symbols: `, ( ) . - / @ '`
   - Case is stored as given.
 - `p/` → Phone number
   - Only valid Singaporean mobile number is allowed, i.e. begins with 8 or 9.
-  - Must consist of only 8 digits.
+  - Must consist of only 8 digits; i.e. no country code.
 - `e/` → Email address
-  - Must follow valid email address format:
-    - Must contain a `@` symbol
-    - Local part allows letters, numbers and `. _ % + -`
-    - Domain must contain at least one `.`
-  - Case-insensitive, converted to lowercase when stored and displayed.
+  - Must follow a standard email structure: local-part@domain.tld
+  - Must contain a @ symbol separating local part and domain
+  - Local part may contain letters, numbers, and the following symbols: . _ % + -
+  - Domain must contain at least one . and consist of letters, numbers, or -
+  - Must not exceed 254 characters in total
+  - The local part must not exceed 64 characters
+  - Case-insensitive; converted to lowercase when stored and displayed
 - `a/` → Home address
   - Must be less than 200 characters long.
-  - Must contain only alphanumeric symbols, spaces and the following special symbols: `, . # - / ( ) &`
+  - Must contain only letters, numbers, spaces, and the following symbols: `, . # - / ( ) &`
   - Case is stored as given.
 - `c/` → Course
   - Must be less than 50 characters long.
   - Must contain only letters, spaces and the following special symbols: `, ( ) & -`
   - Case is stored as given.
 - `m/` → Module
-  - CODE must follow the same format as actual NUS modules.
-  - CODE must consist only of alphanumeric symbols.
+  - CODE must follow the pattern of `2–4 letters + 4 digits + optional suffix`
+  - CODE must contain only letters and numbers
   - CODE and GRADE case-insensitive, converted to uppercase when stored and displayed
+  - CREDITS must be an integer value from 1 to 12.
 - `INDEX` → Index shown in the list
 
 ---
 
 ##  Command Format Notes
 - Command keywords are case-insensitive. For example, `create`, `CREATE`, and `Create` will all invoke the same command.
-- Prefixes (e.g., `n/`, `p/`, `e/`) remain case-sensitive unless otherwise specified.
+- Prefixes (e.g., `n/`, `p/`, `e/`) are case-sensitive and must be in lowercase.
 - Data fields (e.g., names, addresses) preserve the case entered by the user unless stated otherwise. See Data Field Info.
 - Prefixes must be preceded by a space to be recognized as separate fields.
+- Inputs are expected to be standard ASCII characters; behavior for non-standard or invisible characters is undefined.
+- Multiple consecutive spaces in input fields that allow spaces will be normalised to a single space.
 
 ## FAQ
 

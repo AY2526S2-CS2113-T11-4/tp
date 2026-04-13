@@ -3,6 +3,7 @@ package dextro.parser;
 import dextro.exception.ParseException;
 import dextro.model.Grade;
 
+
 public class Validator {
     public static String validateName(String name) throws IllegalArgumentException {
         if (name == null) {
@@ -22,7 +23,7 @@ public class Validator {
                     "Name must contain only alphabets, spaces and special symbols: , ( ) . - / @ '");
         }
 
-        return name.replaceAll("\\s+", " ");
+        return name;
     }
 
     public static String validatePhone(String phone) throws ParseException {
@@ -47,6 +48,15 @@ public class Validator {
             return null;
         }
 
+        if (email.length() > 254) {
+            throw new ParseException("Email must be 254 characters or less");
+        }
+
+        String[] parts = email.split("@", 2);
+        if (parts[0].length() > 64) {
+            throw new ParseException("Email local part must be 64 characters or less");
+        }
+
         if (!email.matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)+$")) {
             throw new ParseException("Invalid email format");
         }
@@ -59,11 +69,16 @@ public class Validator {
             return null;
         }
 
+        if (!address.matches("^[A-Za-z0-9 ,.#\\-/()&]+$")) {
+            throw new ParseException(
+                    "Address must contain only letters, numbers, spaces and the following symbols: , . # - / ( ) &");
+        }
+
         if (address.length() > 200) {
             throw new ParseException("Address too long, must be less than 200 chars");
         }
 
-        return address.replaceAll("\\s+", " ");
+        return address;
     }
 
     public static String validateCourse(String course) throws ParseException {
@@ -76,15 +91,19 @@ public class Validator {
         }
 
         if (!course.matches("^[A-Za-z ,&()-]+$")) {
-            throw new ParseException("Course must contain only alphabets, spaces and special symbols: , & ( ) -");
+            throw new ParseException("Course must contain only letters, spaces and the following symbols: , & ( ) -");
         }
 
         return course.replaceAll("\\s+", " ");
     }
 
     public static String validateModuleCode(String moduleCode) throws ParseException {
+        if (!moduleCode.matches("^[a-zA-Z0-9]+$")) {
+            throw new ParseException("Module code can only contain letters and numbers");
+        }
         if (!moduleCode.matches("^[A-Z]{2,4}\\d{4}[A-Z0-9]{0,5}$")) {
-            throw new ParseException("Invalid module code: " + moduleCode);
+            throw new ParseException("Invalid module code: " + moduleCode +
+                    "\nFormat is: 2–4 letters + 4 digits + optional suffix");
         } else {
             return moduleCode;
         }
@@ -110,8 +129,8 @@ public class Validator {
                     credits +
                     ". Credits must be a positive integer.");
         }
-        if (out <= 0) {
-            throw new ParseException("Credits must be positive");
+        if (out < 1 || out > 12) {
+            throw new ParseException("Credits must be an integer between 1 and 12");
         }
 
         return out;

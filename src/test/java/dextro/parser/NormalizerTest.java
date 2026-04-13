@@ -38,17 +38,14 @@ class NormalizerTest {
     }
 
     @Test
-    void normalizeGeneral_null_returnsNull() {
-        assertNull(Normalizer.normalizeGeneral(null));
+    void validateName_multipleSpaces_collapsedToOne() throws Exception {
+        assertEquals("JOHN DOE", Normalizer.normalizeName("JOHN  DOE"));
+        assertEquals("JOHN DOE", Normalizer.normalizeName("JOHN   DOE"));
     }
 
     @Test
-    void normalizeGeneral_withSpaces_stripped() {
-        assertEquals("hello", Normalizer.normalizeGeneral("  hello  "));
-    }
-
-    @Test
-    void normalizeGeneral_preservesCase() {
-        assertEquals("Orchard Road", Normalizer.normalizeGeneral("Orchard Road"));
+    void validateAddress_multipleSpaces_collapsedToOne() throws Exception {
+        assertEquals("House 1", Normalizer.normalizeAddress("House     1"));
+        assertEquals("House 2", Normalizer.normalizeAddress("House    2"));
     }
 }

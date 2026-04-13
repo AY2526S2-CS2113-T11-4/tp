@@ -70,7 +70,11 @@ public class Parser {
         if (args.strip().isBlank()) {
             throw new ParseException("Delete requires an integer index");
         }
-        int index = Validator.validateIndex(args);
+        String[] tokens = args.strip().split("\\s+", 2);
+        if (tokens.length > 1) {
+            throw new ParseException("Delete only takes one argument (e.g., delete 3)");
+        }
+        int index = Validator.validateIndex(tokens[0]);
         return new DeleteCommand(index);
     }
 
@@ -84,8 +88,8 @@ public class Parser {
         int index = Validator.validateIndex(tokens[0]);
         String[] parts = Validator.validateModuleFormat(tokens[1]);
 
-        String moduleCode = Validator.validateModuleCode(parts[0].toUpperCase().strip());
-        Grade grade = Validator.validateGrade(parts[1].toUpperCase().strip());
+        String moduleCode = Validator.validateModuleCode(Normalizer.normalizeModuleCode(parts[0]));
+        Grade grade = Validator.validateGrade(Normalizer.normalizeGrade(parts[1]));
 
         if (parts.length == 2) {
             return new AddCommand(index, moduleCode, grade, null);
@@ -104,7 +108,7 @@ public class Parser {
         }
 
         int index = Validator.validateIndex(tokens[0]);
-        String moduleCode = Validator.validateModuleCode(tokens[1].strip().toUpperCase());
+        String moduleCode = Validator.validateModuleCode(Normalizer.normalizeModuleCode(tokens[1]));
         return new RemoveCommand(index, moduleCode);
     }
 
@@ -153,23 +157,19 @@ public class Parser {
         String name    = rawName    != null ?
                 Validator.validateName(Normalizer.normalizeName(rawName))           : null;
         String phone   = rawPhone   != null ?
-                Validator.validatePhone(Normalizer.normalizeGeneral(rawPhone))      : null;
+                Validator.validatePhone(Normalizer.normalizePhone(rawPhone))      : null;
         String email   = rawEmail   != null ?
                 Validator.validateEmail(Normalizer.normalizeEmail(rawEmail))        : null;
         String address = rawAddress != null ?
-                Validator.validateAddress(Normalizer.normalizeGeneral(rawAddress))  : null;
+                Validator.validateAddress(Normalizer.normalizeAddress(rawAddress))  : null;
         String course  = rawCourse  != null ?
-                Validator.validateCourse(Normalizer.normalizeGeneral(rawCourse))    : null;
+                Validator.validateCourse(Normalizer.normalizeCourse(rawCourse))    : null;
 
         String moduleCode = null;
         Grade grade = null;
         Integer credits = null;
         if (moduleValue != null) {
-            String[] parts = moduleValue.split("/");
-            if (parts.length < 2 || parts[0].isBlank() || parts[1].isBlank()) {
-                throw new ParseException("Module format must be CODE/GRADE[/CREDITS] " +
-                        "(e.g., m/CS2113/A or m/CS2113/A/2)");
-            }
+            String[] parts = Validator.validateModuleFormat(moduleValue);
             moduleCode = Validator.validateModuleCode(parts[0].strip().toUpperCase());
             grade = Validator.validateGrade(parts[1].strip().toUpperCase());
 
