@@ -171,22 +171,30 @@ public class Student {
         }
 
         public Builder phone(String phone) {
-            this.phone = phone;
+            if (phone != null) {
+                this.phone = phone;
+            }
             return this;
         }
 
         public Builder email(String email) {
-            this.email = email;
+            if (email != null) {
+                this.email = email;
+            }
             return this;
         }
 
         public Builder address(String address) {
-            this.address = address;
+            if (address != null) {
+                this.address = address;
+            }
             return this;
         }
 
         public Builder course(String course) {
-            this.course = course;
+            if (course != null) {
+                this.course = course;
+            }
             return this;
         }
 
