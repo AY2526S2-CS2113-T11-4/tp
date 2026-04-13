@@ -22,6 +22,10 @@ public class StudentDatabase {
         studentList.add(student);
     }
 
+    public void insertStudent(int index, Student student) {
+        studentList.add(index, student);
+    }
+
     public Student getStudent(int index) {
         return studentList.get(index);
     }
