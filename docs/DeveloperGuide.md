@@ -106,6 +106,8 @@ The `Model` component does not depend on `Storage` or `Parser` — it represents
 
 The `Storage` component handles reading from and writing to the flat-file database at `./data/DextroStudentList.txt`.
 
+![StorageClassDiagram](images/StorageClassDiagram.png)
+
 The `Storage` component:
 - saves the full `StudentDatabase` to disk after every mutating command, serialising each `Student` and its `Module` list as a delimited string.
 - loads the student list at startup, parsing each line back into `Student` and `Module` objects. If the file or directory does not exist, it creates them and returns an empty list.
@@ -355,11 +357,11 @@ The class diagram shows the relationship between `EditCommand` and other compone
 
 The sequence diagram illustrates the execution flow:
 1. User executes the edit command with attribute flags(e.g n/ for name and a/ for address)
-2. `Parser` class parse user input and determine which eactly which record is of concern and which attribute needs to be edited based on the flags
+2. `Parser` class parse user input and determine which exactly which record is of concern and which attribute needs to be edited based on the flags
 3. `EditCommand` class constructs an object with all attributes attach to it.
 4. The exact `Student` object is extracted out of `StudentDatabase`
 5. The `Student` object is then rebuilt with updated attributes.
-6. If module need to updated, `EditCommand` will search through the list of modules in `Student`. If Module does not exists, it will add the module in the `Student`.
+6. If module need to updated, `EditCommand` will search through the list of modules in `Student`. If Module does not exist, it will add the module in the `Student`.
 7. `saveStudentList()` is called to save all updates in the database.
 
 #### Find Command
@@ -445,6 +447,56 @@ The sequence diagram illustrates the execution flow:
 - The command retrieves relevant student records from the `StudentDatabase` based on the specified search criteria
 - A `CommandResult` is returned containing the search results based on the specified search criteria
 
+---
+
+### Implementation: Deny
+
+#### Search Command with phone number
+
+The `SearchCommand` allows users to search for students using certain categories, like their phone number.
+
+##### Class Diagram
+
+![SearchCommandPhoneClassDiagram](images/SearchCommandClassPhone.png)
+
+The class diagram shows the relationship between `SearchCommand` and other components:
+- `SearchCommand` implements the `Command` interface
+- `SearchCommand` references `Storage` and `StudentDatabase` as per the Command interface.
+- It interacts with `StudentDatabase` to retrieve relevant student records based on the specified search criteria
+- Although `Storage` is not used in execute method under `SearchCommand`, the `Command` interface requires it. 
+Thus, the method signature of SearchCommand.execute() must match that of `Command`.
+- All methods listed in `Command` is implemented in `SearchCommand` class
+as there is no further child class from `SearchCommand`.
+- Returns a `CommandResult` containing the search results based on the specified search criteria 
+(i.e. possible substring of student phone number)
+
+##### Sequence Diagram
+
+![SearchCommandPhoneSequence](images/SearchCommandPhoneSequence.png)
+
+The sequence diagram illustrates the execution flow:
+- User executes the search command with specified search criteria (in this case, students whose phone number contain 
+the given substring)
+- `Parser` class parses user input and determines the command (search) and the search criteria
+- `SearchCommand.execute()` is called with the `StudentDatabase` and `Storage`
+- The command retrieves relevant student records from the `StudentDatabase` based on the specified search criteria
+- A `CommandResult` is returned containing the search results based on the specified search criteria
+
+#### Storage
+
+Storage manages saving changes to the StudentDatabase through the use of the DextroStudentList.txt file.
+The StudentDatabase is saved whenever the list is altered in any way. If the program is run again, it will
+automatically load the saved task in the txt file, extracting from text to a StudentDatabase.
+
+##### Class Diagram
+
+![StorageClassDiagram](images/StorageClassDiagram.png)
+The class diagram shows the relationship between `Storage` and other components:
+- `Storage` references `StudentDatabase` to retrieve relevant student records when saving the StudentDatabase 
+in the txt file via toString(), dependent on the user command (if the StudentDatabase is altered).
+- `Storage` interacts with `Student` to create each student parsed from the txt file.
+- `Storage` also adds each module and grade associated with the created student previously saved in the txt file.
+
 ## Product scope
 ### Target user profile
 
@@ -455,13 +507,13 @@ The target user is an Administrative Staff member (Admin) at the National Univer
 
 ### Value proposition
 
-Student Records information may be stored in a fragemented fashion, with academic history in one system and progress tracking (GPA, Module Code) in another. The Student Record Data Management System (SRDMS) provides a streamlined, keyboard-centric workflow for maintaining student databases. By using a CLI-based approach, it enables admins to perform batch-like updates and quick searches significantly faster than traditional spreadsheet or form-based systems.
+Student Records information may be stored in a fragmented fashion, with academic history in one system and progress tracking (GPA, Module Code) in another. The Student Record Data Management System (SRDMS) provides a streamlined, keyboard-centric workflow for maintaining student databases. By using a CLI-based approach, it enables admins to perform batch-like updates and quick searches significantly faster than traditional spreadsheet or form-based systems.
 
 ## User Stories
 
 | Version | As a ... | I want to ...                            | So that I can ...                                                       |
 |---------|----------|------------------------------------------|-------------------------------------------------------------------------|
-| v1.0    | Admin    | create a new student record              | add new enrollees to the system record system.                               |
+| v1.0    | Admin    | create a new student record              | add new enrollees to the system record system.                          |
 | v1.0    | Admin    | list all students                        | see a high-level overview of the current student population.            |
 | v1.0    | Admin    | delete a student entry                   | remove records of students who have withdrawn or graduated.             |
 | v2.0    | Admin    | edit student details (name, email, etc.) | ensure the database remains accurate as student information changes.    |
@@ -472,7 +524,15 @@ Student Records information may be stored in a fragemented fashion, with academi
 
 ## Non-Functional Requirements
 
-{Give non-functional requirements}
+Non-functional requirements:
+- Technical requirements: The program works on both 32- and 64-bit environments
+- Usability: A new user may learn the commands in around 10 minutes of understanding the User Guide
+- Reliability: If the program crashes, data up to before the latest command was given will be
+saved in the DextroStudentList.txt file
+- Portability: Program will work in Windows, macOS, and Linux environments
+- Maintainability: Code follows quality standards taught and uses OOP design, with extracted classes
+like Command and Object classes
+
 
 ## Glossary
 
