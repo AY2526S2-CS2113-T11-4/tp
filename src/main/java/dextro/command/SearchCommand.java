@@ -81,7 +81,7 @@ public class SearchCommand implements Command {
     // ========================================================================
     // Private Helper Methods
     // ========================================================================
-    
+
     //Evaluates if a student matches all the provided search criteria.
     private boolean isStudentMatch(Student student) {
         if (!isMatch(student.getName(), this.name)) {
