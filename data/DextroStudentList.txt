@@ -1,3 +1,0 @@
-john/98761234/N.A./N.A./N.A./[]
-jane/98764567/N.A./N.A./N.A./[]
-jack/N.A./N.A./N.A./N.A./[]
