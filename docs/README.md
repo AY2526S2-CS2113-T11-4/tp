@@ -1,6 +1,6 @@
-# beefPancakeChicken
+# Dextro
 
-CS2113 Student Record System
+NUS Student Record System
 
 Useful links:
 * [User Guide](UserGuide.md)

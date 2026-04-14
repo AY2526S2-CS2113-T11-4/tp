@@ -101,6 +101,8 @@ The `Model` component does not depend on `Storage` or `Parser` — it represents
  
 ---
 
+### Design: Deny
+
 #### Storage Component
 
 The `Storage` component handles reading from and writing to the flat-file database at `./data/DextroStudentList.txt`.
